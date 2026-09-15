@@ -541,7 +541,7 @@ export default function Navbar({ currentPage, setCurrentPage, onNavClick }) {
 
       {/* Mobile & Tablet Drawer Accordion Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-200 px-4 pt-3 pb-6 space-y-2 text-sm shadow-2xl animate-in slide-in-from-top duration-200">
+        <div className="lg:hidden bg-white border-t border-gray-200 px-4 pt-3 pb-8 space-y-2 text-sm shadow-2xl max-h-[calc(100vh-80px)] overflow-y-auto animate-in slide-in-from-top duration-200">
           <button onClick={() => handleNavClick('home')} className="block w-full text-left px-3.5 py-2.5 rounded-xl font-bold hover:bg-rlhp-lightgreen hover:text-rlhp-green cursor-pointer">Home</button>
           
           {/* Mobile About Us Accordion */}
