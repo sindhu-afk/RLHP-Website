@@ -21,91 +21,14 @@ export default function KarnatakaMap({ onSelectDistrict }) {
             <span className="text-xs font-bold text-rlhp-darkgreen">Karnataka 8 Districts Operational Corridor</span>
           </div>
 
-          {/* Map Image Graphic with Interactive SVG Pin Layer */}
-          <div className="relative w-full max-w-md aspect-square flex justify-center items-center">
-            {/* Base Low-Poly Poly-Art Map Image requested by user */}
+          {/* Map Image Graphic */}
+          {/* Map Image Graphic */}
+          <div className="relative w-full flex justify-center items-center">
             <img 
-              src={`${import.meta.env.BASE_URL}karnataka-state-map.png`} 
-              alt="Karnataka State Map Outline" 
-              className="w-full h-full object-contain filter drop-shadow-md select-none pointer-events-none"
+              src={`${import.meta.env.BASE_URL}karnataka-district-overview-map.png`} 
+              alt="Karnataka District Overview Map" 
+              className="w-full h-auto max-h-[580px] object-contain rounded-2xl shadow-sm border border-gray-100 select-none"
             />
-
-            {/* SVG Overlay Layer for Pins & Connectors */}
-            <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full z-10 overflow-visible">
-              {/* Connecting Operational Corridor Dashed Route */}
-              <polyline
-                points="62,11 58,20 56,31 44,46 51,50 27,59 46,77 52,84"
-                fill="none"
-                stroke="#E67E22"
-                strokeWidth="0.8"
-                strokeDasharray="1.5 1"
-                opacity="0.85"
-              />
-
-              {/* Interactive District Pins & Label Badges */}
-              {districtsData.map((d) => {
-                const isSelected = selectedDistrict.id === d.id;
-                const isHq = d.isHq;
-
-                return (
-                  <g 
-                    key={d.id} 
-                    onClick={() => handlePinClick(d)}
-                    className="cursor-pointer group"
-                    transform={`translate(${d.coordinates.x}, ${d.coordinates.y})`}
-                  >
-                    {/* Selected Ring Pulse */}
-                    {isSelected && (
-                      <circle cx="0" cy="0" r="4.5" className="animate-ping fill-rlhp-orange opacity-70" />
-                    )}
-
-                    {/* Outer Circle Pin */}
-                    <circle 
-                      cx="0" 
-                      cy="0" 
-                      r={isSelected ? "3" : isHq ? "2.5" : "2"} 
-                      className={`${
-                        isSelected 
-                          ? 'fill-rlhp-orange stroke-white stroke-[0.6]' 
-                          : isHq
-                          ? 'fill-rlhp-darkgreen stroke-white stroke-[0.5]'
-                          : 'fill-rlhp-green group-hover:fill-rlhp-orange stroke-white stroke-[0.4] transition-colors'
-                      }`}
-                    />
-
-                    {/* Inner Target Core */}
-                    <circle 
-                      cx="0" 
-                      cy="0" 
-                      r="0.8" 
-                      fill="#FFFFFF" 
-                    />
-
-                    {/* Pure Text Location Label - No Background Box */}
-                    <text
-                      x={d.coordinates.x > 50 ? "-3.5" : "3.5"}
-                      y="1.2"
-                      textAnchor={d.coordinates.x > 50 ? "end" : "start"}
-                      fontSize="3.8"
-                      fontWeight="bold"
-                      fill={isSelected ? "#D35400" : isHq ? "#B45309" : "#064E3B"}
-                      stroke="#FFFFFF"
-                      strokeWidth="0.6"
-                      paintOrder="stroke fill"
-                      className="pointer-events-none select-none font-sans"
-                    >
-                      {d.name.split(' ')[0]}
-                    </text>
-                  </g>
-                );
-              })}
-            </svg>
-          </div>
-
-          {/* Map Footer Helper */}
-          <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-lg border border-gray-200 text-[11px] text-gray-700 flex items-center space-x-2 shadow-2xs z-20">
-            <span className="w-2.5 h-2.5 rounded-full bg-rlhp-orange animate-pulse"></span>
-            <span className="font-semibold">Click any district pin or label to view projects</span>
           </div>
         </div>
 
