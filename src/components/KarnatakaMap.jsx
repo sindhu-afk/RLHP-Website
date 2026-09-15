@@ -25,8 +25,8 @@ export default function KarnatakaMap({ onSelectDistrict }) {
           <div className="relative w-full max-w-md aspect-square flex justify-center items-center">
             {/* Base Low-Poly Poly-Art Map Image requested by user */}
             <img 
-              src="/karnataka-poly-map.jpg" 
-              alt="Karnataka Poly-Art Geometric Map" 
+              src={`${import.meta.env.BASE_URL}karnataka-state-map.png`} 
+              alt="Karnataka State Map Outline" 
               className="w-full h-full object-contain filter drop-shadow-md select-none pointer-events-none"
             />
 
