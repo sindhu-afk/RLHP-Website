@@ -10,7 +10,7 @@ import {
 const heroSlides = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop",
+    image: `${import.meta.env.BASE_URL}images/hero_slide_1.jpg`,
     badge: "42+ Years of Community Empowerment",
     title: "Empowering Communities.",
     highlightTitle: "Transforming Lives.",
@@ -20,7 +20,7 @@ const heroSlides = [
   },
   {
     id: 2,
-    image: "/images/hero_slide_2.jpg",
+    image: `${import.meta.env.BASE_URL}images/hero_slide_2.jpg`,
     badge: "Child Rights & Community Action",
     title: "Standing Together for",
     highlightTitle: "Child Rights & Protection.",
@@ -30,7 +30,7 @@ const heroSlides = [
   },
   {
     id: 3,
-    image: "/images/hero_slide_3.jpg",
+    image: `${import.meta.env.BASE_URL}images/hero_slide_3.jpg`,
     badge: "Food Security & Self Reliance",
     title: "Fostering Unity,",
     highlightTitle: "Livelihood & Hope.",
