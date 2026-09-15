@@ -123,7 +123,7 @@ export default function Navbar({ currentPage, setCurrentPage, onNavClick }) {
           className="flex items-center space-x-3 text-left group focus:outline-none flex-1 min-w-0 cursor-pointer"
         >
           <img 
-            src="/rlhp-logo.png" 
+            src={`${import.meta.env.BASE_URL}rlhp-logo.png`} 
             alt="RLHP Logo" 
             className={`object-contain rounded-full drop-shadow-md group-hover:scale-105 transition-all duration-300 shrink-0 ${
               isScrolled 

@@ -5,7 +5,7 @@ export default function RlhpLogo({ className = "w-20 h-20 sm:w-24 sm:h-24 md:w-2
     <div className="flex items-center space-x-3.5">
       {/* Official Circular RLHP Emblem - Scaled & Prominent */}
       <img 
-        src="/rlhp-logo.png" 
+        src={`${import.meta.env.BASE_URL}rlhp-logo.png`} 
         alt="Rural Literacy & Health Programme (RLHP) Logo" 
         className={`${className} object-contain rounded-full drop-shadow-md hover:scale-105 transition-transform shrink-0`}
       />
