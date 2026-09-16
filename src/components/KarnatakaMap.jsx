@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { districtsData } from '../data/rlhpData';
-import { MapPin, ChevronRight, CheckCircle2, Compass, ShieldCheck, Sparkles, Navigation } from 'lucide-react';
+import { MapPin, ChevronRight, CheckCircle2, ShieldCheck, Sparkles, Navigation } from 'lucide-react';
 
 export default function KarnatakaMap({ onSelectDistrict }) {
   const [selectedDistrict, setSelectedDistrict] = useState(districtsData[0]); // default Mysuru HQ
@@ -22,11 +22,7 @@ export default function KarnatakaMap({ onSelectDistrict }) {
           <div className="absolute -top-24 -left-24 w-72 h-72 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
           <div className="absolute -bottom-24 -right-24 w-72 h-72 bg-amber-500/20 rounded-full blur-3xl pointer-events-none"></div>
 
-          {/* Map Header Badge */}
-          <div className="absolute top-4 left-4 z-20 flex items-center space-x-2 bg-slate-900/90 backdrop-blur-md px-4 py-2 rounded-full border border-emerald-500/30 shadow-lg">
-            <Compass size={16} className="text-amber-400 animate-spin-slow" />
-            <span className="text-xs font-extrabold text-white tracking-wide">Dynamic Interactive Karnataka Map</span>
-          </div>
+
 
           {/* Active District Status Banner */}
           <div className="absolute top-4 right-4 z-20 flex items-center space-x-2 bg-emerald-500/20 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-emerald-400/30 text-emerald-300 text-xs font-bold">
