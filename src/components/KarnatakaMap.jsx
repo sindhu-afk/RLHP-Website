@@ -92,7 +92,7 @@ export default function KarnatakaMap({ onSelectDistrict }) {
                       ? 'w-7 h-7 bg-emerald-600 text-white border-2 border-emerald-300 shadow-md group-hover:scale-110 group-hover:bg-amber-500'
                       : 'w-6 h-6 bg-slate-900/90 text-emerald-400 border border-emerald-500/50 group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white'
                   }`}>
-                    {isHq ? <Sparkles size={14} /> : <MapPin size={12} />}
+                    <MapPin size={12} />
                   </div>
 
                   {/* Dynamic Floating Label Badge */}
@@ -144,7 +144,6 @@ export default function KarnatakaMap({ onSelectDistrict }) {
             <div>
               <h3 className="text-3xl font-black text-rlhp-darkgreen tracking-tight flex items-center space-x-2">
                 <span>{selectedDistrict.name}</span>
-                {selectedDistrict.isHq && <Sparkles size={24} className="text-amber-500 animate-bounce" />}
               </h3>
               <p className="text-xs font-semibold text-gray-500 mt-1">Ground Operations & Facilities</p>
             </div>

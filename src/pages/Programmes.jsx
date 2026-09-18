@@ -127,7 +127,6 @@ export default function Programmes({ onOpenDonate, selectedProgrammeId: propProg
             <div className="space-y-3">
               <h4 className="text-xs font-bold text-gray-900 uppercase tracking-wider border-b border-gray-100 pb-1.5 flex items-center justify-between">
                 <span>Key Initiatives & Infrastructure</span>
-                <Sparkles size={14} className="text-rlhp-orange" />
               </h4>
               <div className="space-y-3">
                 {activeProg.keyInitiatives.map((init, idx) => (

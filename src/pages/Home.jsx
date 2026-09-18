@@ -10,7 +10,7 @@ import {
 const heroSlides = [
   {
     id: 1,
-    image: `${import.meta.env.BASE_URL}images/hero_slide_1.jpg`,
+    image: `${import.meta.env.BASE_URL}images/hero_slide_1.png`,
     badge: "42+ Years of Community Empowerment",
     title: "Empowering Communities.",
     highlightTitle: "Transforming Lives.",
