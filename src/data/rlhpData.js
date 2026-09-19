@@ -19,7 +19,7 @@ export const orgDetails = {
     youtube: "https://youtube.com/rlhpmysore"
   },
   statutory: {
-    registrationNo: "36/83-84 (Registered under Karnataka Societies Registration Act 1960)",
+    registrationNo: "36/83-84 (Registered on 24th May 1984 under Karnataka Societies Registration Act 1960 and FCRA)",
     fcraNo: "094590059 (FCRA Validated)",
     taxExemption80G: "80G Certified (Tax Exemption under Sec 80G)",
     sec12A: "12A Approved",
@@ -46,13 +46,9 @@ export const orgDetails = {
     }
   },
   boardMembers: [
-    { name: "Mr. Koshy Mathew", designation: "President", role: "President" },
+    { name: "Ms. Gita Mitra", designation: "President", role: "President" },
     { name: "Mr. Jose V.K.", designation: "Secretary & Director", role: "Secretary / Director" },
-    { name: "Mr. Santhosh Kumar", designation: "Treasurer", role: "Treasurer" },
-    { name: "Ms. Rosy Sujatha K.", designation: "Board Member", role: "Member" },
-    { name: "Mr. Prasanna N.", designation: "Board Member", role: "Member" },
-    { name: "Mrs. Geetha Mitra", designation: "Board Member", role: "Member" },
-    { name: "Mrs. Elizabeth John", designation: "Board Member", role: "Member" }
+    { name: "Mr. Santhosh Kumar", designation: "Treasurer", role: "Treasurer" }
   ],
   approaches: [
     { title: "Child Centered", description: "The child is kept in focus when making decisions about their lives and working in partnership with them and their families." },
@@ -67,10 +63,10 @@ export const orgDetails = {
 export const bankDetails = orgDetails.bankDetails;
 
 export const impactStats = [
-  { id: 1, count: "42+", label: "Years of Service", description: "Empowering marginalized communities since 1983", icon: "Clock" },
-  { id: 2, count: "2,15,000+", label: "People Reached", description: "Direct beneficiaries across Karnataka", icon: "Users" },
+  { id: 1, count: "42+", label: "Years of Service", description: "Empowering marginalized communities since 1984", icon: "Clock" },
+  { id: 2, count: "9.65 Lakh+", label: "People Reached", description: "Reaching over 9.65 lakh people across South & North Karnataka", icon: "Users" },
   { id: 3, count: "10,000+", label: "Children Engaged", description: "Active members in 78 Child Rights Clubs", icon: "Heart" },
-  { id: 4, count: "8", label: "Districts Active", description: "Comprehensive rural & urban coverage", icon: "MapPin" }
+  { id: 4, count: "10", label: "Districts Active", description: "Covering 10 districts in South & North Karnataka", icon: "MapPin" }
 ];
 
 export const focusAreas = [
@@ -160,7 +156,7 @@ export const programmesData = [
       "Over 2,100+ children provided residential care and education at AshaKirana & AshaBhavana",
       "8,000+ children rescued and rehabilitated through CHILDLINE and emergency interventions",
       "Child-friendly schools & community safety monitoring systems",
-      "Prevention of child marriage and school dropouts across 8 districts"
+      "Prevention of child marriage and school dropouts across 10 districts"
     ]
   },
   {
@@ -331,8 +327,16 @@ export const districtsData = [
     name: "Chamarajanagar",
     coordinates: { x: 52, y: 84 },
     projectsCount: 2,
-    description: "Tribal women empowerment, forest rights, maternal health, and sustainable organic farming.",
+    description: "South Karnataka: Tribal women empowerment, forest rights, maternal health, and sustainable organic farming.",
     projects: ["Tribal Livelihood Initiative", "Maternal & Child Health Care"]
+  },
+  {
+    id: "mandya",
+    name: "Mandya",
+    coordinates: { x: 50, y: 72 },
+    projectsCount: 2,
+    description: "South Karnataka focus: Women sangha federations, maternal nutrition, and rural sanitation initiatives.",
+    projects: ["Women Sangha Empowerment Initiative", "Rural Health & Sanitation Campaign"]
   },
   {
     id: "kalaburagi",
@@ -355,15 +359,23 @@ export const districtsData = [
     name: "Raichur",
     coordinates: { x: 56, y: 31 },
     projectsCount: 2,
-    description: "Child rights clubs, anti-child labor rehabilitation, and water conservation.",
+    description: "North Karnataka: Child rights clubs, anti-child labor rehabilitation, and water conservation.",
     projects: ["Raichur Child Protection Unit", "Sanitation & Water Rights"]
+  },
+  {
+    id: "yadgir",
+    name: "Yadgir",
+    coordinates: { x: 60, y: 25 },
+    projectsCount: 2,
+    description: "North Karnataka focus: Government schemes facilitation, child rights protection, and rural education.",
+    projects: ["Yadgir Child Rights Protection Center", "North Karnataka Welfare Scheme Facilitation"]
   },
   {
     id: "chitradurga",
     name: "Chitradurga",
     coordinates: { x: 51, y: 50 },
     projectsCount: 2,
-    description: "Women self-help group federations and learning disability diagnostic centers.",
+    description: "Central/North Karnataka: Women self-help group federations and learning disability diagnostic centers.",
     projects: ["BELAKU Women Sangha Project", "IEP Disability Remediation"]
   },
   {
@@ -371,7 +383,7 @@ export const districtsData = [
     name: "Davanagere",
     coordinates: { x: 44, y: 46 },
     projectsCount: 1,
-    description: "Youth vocational training, life skills, and government scheme awareness.",
+    description: "Central Karnataka: Youth vocational training, life skills, and government scheme awareness.",
     projects: ["Davanagere Skill & Governance Center"]
   },
   {
@@ -1032,7 +1044,7 @@ export const videoGalleryData = [
     year: "2024",
     duration: "14:20",
     image: "/images/gallery/ashakirana_activities.jpg",
-    description: "Retrospective journey celebrating over 2,15,000 lives impacted across Mysuru and Karnataka."
+    description: "Retrospective journey celebrating over 9.65 lakh lives impacted across South & North Karnataka."
   },
   {
     id: "vid-17",

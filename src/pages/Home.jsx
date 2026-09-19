@@ -227,7 +227,7 @@ export default function Home({ setCurrentPage, onNavClick, onOpenDonate, onSelec
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold text-rlhp-darkgreen">Where We Work</h2>
             <p className="text-xs sm:text-sm text-gray-500 mt-1">
-              RLHP is currently working in 8 districts across Karnataka.
+              RLHP is currently working in 10 districts of Karnataka covering South and North Karnataka, reaching a population of over 9.65 lakh people.
             </p>
           </div>
           <button

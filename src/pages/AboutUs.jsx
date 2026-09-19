@@ -24,10 +24,10 @@ export default function AboutUs({ setCurrentPage }) {
               Rural Literacy & Health Programme (RLHP)
             </h2>
             <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
-              Rural Literacy & Health Programme (RLHP), Mysore is a voluntary organization working since 1983 for the empowerment of children, women and marginalized communities in rural and urban areas across Karnataka.
+              Rural Literacy and Health Programme (RLHP) is a Mysore-based NGO. It was registered on 24th May 1984 under the Karnataka Societies Registration Act 1960 [and FCRA].
             </p>
             <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
-              We believe in community participation, inclusiveness and sustainable development. Over the last 42+ years, RLHP has transformed thousands of lives through child rights advocacy, residential shelter homes, learning disability remediation, women sanghas, and last-mile government scheme facilitation.
+              At present, RLHP works in 10 districts of Karnataka covering South and North Karnataka, reaching a population of over 9.65 lakh people. Over the last 42+ years, RLHP has transformed thousands of lives through child rights advocacy, residential shelter homes, learning disability remediation, women sanghas, and last-mile government scheme facilitation.
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-2">
@@ -36,8 +36,8 @@ export default function AboutUs({ setCurrentPage }) {
                 <div className="text-xs text-gray-600 font-medium">Unbroken Ground Presence</div>
               </div>
               <div className="p-4 bg-orange-50 rounded-xl border border-orange-200">
-                <div className="text-2xl font-bold text-rlhp-orange">8 Districts</div>
-                <div className="text-xs text-gray-600 font-medium">Urban & Rural Coverage</div>
+                <div className="text-2xl font-bold text-rlhp-orange">10 Districts</div>
+                <div className="text-xs text-gray-600 font-medium">South & North Karnataka Coverage</div>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@ export default function AboutUs({ setCurrentPage }) {
             <span className="text-xs font-bold text-rlhp-orange uppercase tracking-wider bg-orange-100 px-3 py-1 rounded-full">
               Leadership & Governance
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-rlhp-darkgreen mt-2">RLHP Board of Directors</h2>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-rlhp-darkgreen mt-2">RLHP Board & Governance</h2>
             <p className="text-xs text-gray-500 mt-1">Guided by experienced social leaders, development experts, and community trustees</p>
           </div>
 
@@ -124,7 +124,7 @@ export default function AboutUs({ setCurrentPage }) {
                 <span className="text-[10px] font-bold uppercase tracking-wider text-rlhp-orange bg-orange-50 px-2 py-0.5 rounded">
                   President
                 </span>
-                <h3 className="text-lg font-extrabold text-gray-900 mt-1">Mr. Koshy Mathew</h3>
+                <h3 className="text-lg font-extrabold text-gray-900 mt-1">Ms. Gita Mitra</h3>
                 <p className="text-xs text-gray-500 mt-0.5">President, RLHP Board</p>
               </div>
             </div>
@@ -155,32 +155,6 @@ export default function AboutUs({ setCurrentPage }) {
                 </span>
                 <h3 className="text-lg font-extrabold text-gray-900 mt-1">Mr. Santhosh Kumar</h3>
                 <p className="text-xs text-gray-500 mt-0.5">Treasurer, Financial Oversight</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Other Board Members Grid */}
-          <div className="bg-gray-50 p-6 rounded-2xl border border-gray-200 space-y-4">
-            <h4 className="font-bold text-xs text-gray-700 uppercase tracking-wider text-center">Distinguished Board Trustees</h4>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="bg-white p-4 rounded-xl border border-gray-200 text-center space-y-1">
-                <h5 className="font-bold text-xs text-gray-900">Ms. Rosy Sujatha K.</h5>
-                <span className="text-[10px] text-gray-500">Board Member</span>
-              </div>
-
-              <div className="bg-white p-4 rounded-xl border border-gray-200 text-center space-y-1">
-                <h5 className="font-bold text-xs text-gray-900">Mr. Prasanna N.</h5>
-                <span className="text-[10px] text-gray-500">Board Member</span>
-              </div>
-
-              <div className="bg-white p-4 rounded-xl border border-gray-200 text-center space-y-1">
-                <h5 className="font-bold text-xs text-gray-900">Mrs. Geetha Mitra</h5>
-                <span className="text-[10px] text-gray-500">Board Member</span>
-              </div>
-
-              <div className="bg-white p-4 rounded-xl border border-gray-200 text-center space-y-1">
-                <h5 className="font-bold text-xs text-gray-900">Mrs. Elizabeth John</h5>
-                <span className="text-[10px] text-gray-500">Board Member</span>
               </div>
             </div>
           </div>

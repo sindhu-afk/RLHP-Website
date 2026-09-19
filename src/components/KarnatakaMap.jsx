@@ -62,10 +62,12 @@ export default function KarnatakaMap({ onSelectDistrict }) {
               const positionMap = {
                 bidar: { top: '12%', left: '65%' },
                 kalaburagi: { top: '22%', left: '55%' },
+                yadgir: { top: '26%', left: '60%' },
                 raichur: { top: '34%', left: '62%' },
                 davanagere: { top: '48%', left: '44%' },
                 chitradurga: { top: '52%', left: '56%' },
                 udupi: { top: '62%', left: '30%' },
+                mandya: { top: '72%', left: '50%' },
                 mysuru: { top: '78%', left: '46%' },
                 chamarajanagar: { top: '86%', left: '52%' }
               };
@@ -115,7 +117,7 @@ export default function KarnatakaMap({ onSelectDistrict }) {
               <span className="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
               <span className="font-semibold text-white">Click any node on the map to switch district</span>
             </div>
-            <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider hidden sm:inline">8 Active Hubs</span>
+            <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider hidden sm:inline">10 Active Hubs</span>
           </div>
 
         </div>

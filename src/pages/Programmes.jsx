@@ -101,7 +101,7 @@ export default function Programmes({ onOpenDonate, selectedProgrammeId: propProg
                 </span>
                 <span className="text-[10px] font-bold bg-white/20 backdrop-blur-sm text-white px-2.5 py-1 rounded-full flex items-center space-x-1">
                   <MapPin size={10} />
-                  <span>8 Districts Active</span>
+                  <span>10 Districts Active</span>
                 </span>
               </div>
               <h3 className="text-2xl font-extrabold">{activeProg.title}</h3>

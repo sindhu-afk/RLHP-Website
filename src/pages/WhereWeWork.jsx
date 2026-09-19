@@ -8,7 +8,7 @@ export default function WhereWeWork() {
         <div className="max-w-7xl mx-auto space-y-3">
           <h1 className="text-3xl sm:text-5xl font-extrabold">Where We Work</h1>
           <p className="text-xs sm:text-sm text-rlhp-lightgreen max-w-xl mx-auto font-medium">
-            Active presence across 8 key districts in Karnataka
+            Active presence across 10 key districts in Karnataka covering South and North Karnataka
           </p>
         </div>
       </section>
@@ -17,7 +17,7 @@ export default function WhereWeWork() {
         <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center max-w-2xl mx-auto">
           <h2 className="text-xl font-bold text-rlhp-darkgreen">Geographic Footprint in Karnataka</h2>
           <p className="text-xs text-gray-600 mt-2 leading-relaxed">
-            RLHP operates in southern, central, and northern districts of Karnataka. Click on any district pin below to view specific local facilities, shelter homes, and community federations.
+            RLHP operates in 10 districts of Karnataka covering South and North Karnataka, reaching a population of over 9.65 lakh people. Click on any district pin below to view specific local facilities, shelter homes, and community federations.
           </p>
         </div>
 
