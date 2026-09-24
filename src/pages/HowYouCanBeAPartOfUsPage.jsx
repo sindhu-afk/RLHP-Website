@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { orgDetails, bankDetails } from '../data/rlhpData';
+import { orgDetails, bankDetails, fundingPartners } from '../data/rlhpData';
 import { 
   Heart, Landmark, ShieldCheck, Users, Megaphone, 
   Building2, CheckCircle2, Gift, Copy, Check, ArrowRight,
@@ -293,34 +293,28 @@ export default function HowYouCanBeAPartOfUsPage({ setCurrentPage }) {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-5 bg-gray-50 rounded-xl border border-gray-200 space-y-2">
-              <span className="text-xs font-extrabold text-rlhp-green uppercase tracking-wider bg-green-100 px-2.5 py-0.5 rounded-full">Magneti Marelli</span>
-              <p className="text-xs text-gray-700 font-medium pt-1">
-                Project: <strong>“Empowering people in the backward districts of Karnataka to access public schemes”</strong>
-              </p>
-            </div>
-
-            <div className="p-5 bg-gray-50 rounded-xl border border-gray-200 space-y-2">
-              <span className="text-xs font-extrabold text-blue-700 uppercase tracking-wider bg-blue-100 px-2.5 py-0.5 rounded-full">Wipro Cares</span>
-              <p className="text-xs text-gray-700 font-medium pt-1">
-                Project: <strong>“Community development through Health and Sanitation”</strong>
-              </p>
-            </div>
-
-            <div className="p-5 bg-gray-50 rounded-xl border border-gray-200 space-y-2">
-              <span className="text-xs font-extrabold text-purple-700 uppercase tracking-wider bg-purple-100 px-2.5 py-0.5 rounded-full">AMADEUS</span>
-              <p className="text-xs text-gray-700 font-medium pt-1">
-                Project: <strong>“Child focused integrated development”</strong>
-              </p>
-            </div>
-
-            <div className="p-5 bg-gray-50 rounded-xl border border-gray-200 space-y-2">
-              <span className="text-xs font-extrabold text-amber-700 uppercase tracking-wider bg-amber-100 px-2.5 py-0.5 rounded-full">Klüber Lubrication Pvt Ltd</span>
-              <p className="text-xs text-gray-700 font-medium pt-1">
-                Project: <strong>“Education support for poor children”</strong>
-              </p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {fundingPartners.map((partner, idx) => (
+              <div key={idx} className="p-4 bg-gray-50 rounded-xl border border-gray-200 flex flex-col justify-between space-y-3 hover:border-rlhp-green hover:bg-white transition-all shadow-2xs group">
+                <div className="h-14 flex items-center justify-center bg-white p-2 rounded-lg border border-gray-100 shadow-2xs w-full">
+                  {partner.logoImage ? (
+                    <img 
+                      src={`${import.meta.env.BASE_URL}${partner.logoImage.replace(/^\//, '')}`} 
+                      alt={`${partner.name} Logo`}
+                      className="max-h-12 max-w-full object-contain filter group-hover:brightness-105 transition-all"
+                    />
+                  ) : (
+                    <span className="text-xs font-extrabold text-rlhp-darkgreen uppercase tracking-wider">{partner.logoText}</span>
+                  )}
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold text-gray-900 line-clamp-1">{partner.name}</h4>
+                  <p className="text-[11px] text-gray-600 font-medium leading-snug mt-1">
+                    Project: <strong>"{partner.project}"</strong>
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
       </div>

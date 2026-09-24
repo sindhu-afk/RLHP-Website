@@ -155,15 +155,19 @@ export default function ImageModal({ item, onClose }) {
           </div>
 
           <h3 className="text-xl font-bold text-gray-900 leading-snug">{item.title}</h3>
-          <div className="bg-gray-50 p-4 rounded-xl border border-gray-100 space-y-2">
+          <div className="bg-gray-50 p-4 rounded-xl border border-gray-100 space-y-3 max-h-[45vh] overflow-y-auto">
             {item.excerpt && item.content && !item.content.startsWith(item.excerpt) && (
               <p className="text-xs font-semibold text-gray-800 leading-relaxed border-b border-gray-200 pb-2">
                 {item.excerpt}
               </p>
             )}
-            <p className="text-xs text-gray-600 leading-relaxed">
-              {item.content || item.description || item.summary || 'Official media resource from Rural Literacy & Health Programme (RLHP), Mysore.'}
-            </p>
+            {(item.content || item.fullStory || item.description || item.summary || 'Official media resource from Rural Literacy & Health Programme (RLHP), Mysore.')
+              .split('\n\n')
+              .map((para, idx) => (
+                <p key={idx} className="text-xs text-gray-700 leading-relaxed">
+                  {para}
+                </p>
+              ))}
           </div>
 
           <div className="pt-2 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">

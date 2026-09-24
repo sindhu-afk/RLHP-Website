@@ -7,7 +7,7 @@ export default function RlhpLogo({ className = "w-20 h-20 sm:w-24 sm:h-24 md:w-2
       <img 
         src={`${import.meta.env.BASE_URL}rlhp-logo.png`} 
         alt="Rural Literacy & Health Programme (RLHP) Logo" 
-        className={`${className} object-contain rounded-full drop-shadow-md hover:scale-105 transition-transform shrink-0`}
+        className={`${className} object-contain rounded-full bg-white drop-shadow-md hover:scale-105 transition-transform shrink-0`}
       />
 
       {showText && (

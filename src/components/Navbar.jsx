@@ -125,7 +125,7 @@ export default function Navbar({ currentPage, setCurrentPage, onNavClick }) {
           <img 
             src={`${import.meta.env.BASE_URL}rlhp-logo.png`} 
             alt="RLHP Logo" 
-            className={`object-contain rounded-full drop-shadow-md group-hover:scale-105 transition-all duration-300 shrink-0 ${
+            className={`object-contain rounded-full bg-white drop-shadow-md group-hover:scale-105 transition-all duration-300 shrink-0 ${
               isScrolled 
                 ? 'w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14' 
                 : 'w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16'

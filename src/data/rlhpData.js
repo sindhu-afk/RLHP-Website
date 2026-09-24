@@ -45,10 +45,20 @@ export const orgDetails = {
       address: "47, SBM Colony, Mahadevapura Main Road, Udayagiri, Mysore – 570019"
     }
   },
+  vision: "To create a just, free, equitable and sustainable society",
+  mission: "To empower the marginalised poor in slums and villages, vulnerable children and others affected by natural calamities and climate changes to respond to the challenges of growing poverty and rights violations, through collective and affirmative action leading to sustainable development and self reliance.",
+  founders: [
+    { name: "Mr. Joy Maliekal", designation: "Founder" },
+    { name: "Mrs. Philomena Joy", designation: "Founder" }
+  ],
   boardMembers: [
-    { name: "Ms. Gita Mitra", designation: "President", role: "President" },
-    { name: "Mr. Jose V.K.", designation: "Secretary & Director", role: "Secretary / Director" },
-    { name: "Mr. Santhosh Kumar", designation: "Treasurer", role: "Treasurer" }
+    { name: "Mrs. Gita Mitra", designation: "President", role: "President", image: "/images/team/gita_mithra.jpg" },
+    { name: "Mr. Jose V.K.", designation: "Secretary & Director", role: "Secretary / Director", image: "/images/team/jose_vk.jpg" },
+    { name: "Mr. Santhosh Kumar", designation: "Treasurer", role: "Treasurer", image: "/images/team/santhosh_kumar.jpg" },
+    { name: "Mr. Prasanna N", designation: "Board Member", role: "Board Member" },
+    { name: "Ms. Elizabeth John", designation: "Board Member", role: "Board Member" },
+    { name: "Ms. Rosy Sujatha K", designation: "Board Member", role: "Board Member" },
+    { name: "Mr. Johnson Joseph", designation: "Board Member", role: "Board Member" }
   ],
   approaches: [
     { title: "Child Centered", description: "The child is kept in focus when making decisions about their lives and working in partnership with them and their families." },
@@ -467,35 +477,243 @@ export const newsArticlesData = [
 export const successStoriesData = [
   {
     id: "story-1",
-    title: "Children Green Team & Eco-Friendly School Kitchen Garden",
-    programme: "Child Development & Environment",
-    image: "/images/gallery/health_distribution_bheemanabeedu.jpg",
-    remoteImage: "https://www.rlhpmysore.com/wp-content/uploads/2020/07/27.05.2020-Free-educational-health-Material-distribution-Programme-Bheemanabeedu-3.jpg",
-    summary: "Deviramma, studying in 5th standard at Govt. School in Puttegowdanahundi village, leads a 20-member Children Green Team. Supported by RLHP, they cultivated an organic herbal garden (Aloe vera, Mint, Papaya, Tulasi, Brahmi, Tomato, Radish) providing nutritious organic vegetables for midday school meals.",
-    author: "Deviramma (Student Representative)",
-    location: "Puttegowdanahundi Village, Mysuru",
+    title: "Testimonial – Nagarathna",
+    programme: "Asha Bhavana Girls’ Home & Child Rights",
+    image: "/images/stories/nagarathna.jpg",
+    summary: "I always dreamed of wearing a school uniform, tie, belt and shoes, and carrying a lunchbox like other schoolchildren. RLHP brought me to Asha Bhavana Girls’ Home. Today, I am an advocate practising at the Magistrate Court in Bengaluru.",
+    author: "Nagarathna",
+    location: "Advocate, Bengaluru",
+    fullStory: `“I always dreamed of wearing a school uniform, tie, belt and shoes, and carrying a lunchbox like other schoolchildren. Unfortunately, I was not fortunate enough to experience that childhood. I spent many years on the streets, struggling to earn my daily bread and facing numerous hardships. I was often chased by the police and spent many sleepless nights. Despite these challenges, I managed to pay my school fees from Grade 2 to Grade 7 by begging on the streets.
+
+RLHP identified me and brought me to Asha Bhavana Girls’ Home, where I received the care, education and support I needed. With the guidance and opportunities provided by RLHP, I was able to continue my education and build a better future.
+
+Today, I am an advocate practising at the Magistrate Court in Bengaluru. The support I received from RLHP transformed my life and enabled me to live with dignity and independence. I am deeply grateful to RLHP for believing in me and giving me the opportunity to build a meaningful future. Today, I am proud to serve and support people in need.”
+
+— Nagarathna, Advocate, Bengaluru`,
     isPlaceholder: false
   },
   {
     id: "story-2",
-    title: "COVID-19 Grocery Kit & Food Relief for Vulnerable Families",
-    programme: "Humanitarian Relief & Disaster Response",
-    image: "/images/gallery/emergency_ration_distribution.jpg",
-    remoteImage: "https://www.rlhpmysore.com/wp-content/uploads/2020/07/Picture44.jpg",
-    summary: "Madamma, a 70-year-old widow from Chatnahalli village caring for her two orphaned grandchildren after losing both her son and daughter-in-law, received essential food grains, dry rations, and health precautionary materials from RLHP during lockdowns.",
-    author: "Madamma (Beneficiary)",
-    location: "Chatnahalli Village, Mysuru Taluk",
+    title: "Testimonial – Prashanth",
+    programme: "Asha Kirana Boys’ Shelter Home & Vocational Skills",
+    image: "/images/stories/prashanth.jpg",
+    summary: "Orphaned at age 7 in Kalyanagiri, Mysuru, Prashanth joined Asha Kirana. He scored 437 marks in SSLC, completed a 2-year motorcycle repair course, and now works as a mechanic at a TVS showroom earning ₹14,000/month.",
+    author: "Prashanth",
+    location: "Mysuru, Karnataka",
+    fullStory: `“I was born in Kalyanagiri, Mysuru, and lost both my parents at a very young age. My life changed when I joined Asha Kirana Boys’ Shelter Home at the age of seven. Asha Kirana gave me a safe place to live, along with care, guidance and the confidence to dream about my future.
+
+Growing up at Asha Kirana taught me discipline, responsibility and good values. I enjoyed playing kabaddi and developed a strong interest in agriculture and animal husbandry. Although I was a slow learner, I never gave up. I worked hard in my studies, particularly in mathematics, and successfully completed my 10th standard with 437 marks.
+
+With the support of RLHP, I later completed a two-year vocational training course in two-wheeler repair in Hunsur. The training gave me valuable technical skills and helped me become financially independent.
+
+Today, I work as a mechanic at a reputed TVS showroom in Mysuru and earn ₹14,000 per month. I live independently in a rented house and look forward to opening my own garage, building a home and starting a family.
+
+I am deeply grateful to RLHP and Asha Kirana for the care, education and guidance they provided throughout my journey. Their support helped me build a safe, stable and dignified life. I hope my journey inspires other children at Asha Kirana to work hard, believe in themselves and never give up on their dreams.”
+
+— Prashanth, Mysuru`,
     isPlaceholder: false
   },
   {
     id: "story-3",
-    title: "From Rescue to Master's Degree: Rehabilitation at AshaKirana",
-    programme: "Child Protection (AshaKirana Shelter Home)",
-    image: "/images/gallery/ashakirana_activities.jpg",
-    remoteImage: "https://www.rlhpmysore.com/wp-content/uploads/2020/07/IMG-20190923-WA0143.jpg",
-    summary: "Rescued from child labour at age 9, Raju received comprehensive residential care, counseling, and schooling at AshaKirana Boys Shelter Home. Today he holds a Master's Degree in Social Work and advocates for child rights across Karnataka.",
-    author: "RLHP Alumni Network",
+    title: "Once a Rag Picker, Now a Dignified Carpenter",
+    programme: "Asha Kirana & Seva Sadhana Vocational Training",
+    image: "/images/gallery/migrant_worker_rehabilitation.jpg",
+    summary: "Orphaned at age 3, Narayana picked rags at Boti Bazaar to survive. Rescued by RLHP to Asha Kirana, he completed SSLC and trained in woodwork at Seva Sadhana Bengaluru. Today he earns ₹15,000/month as a skilled carpenter.",
+    author: "Narayana",
+    location: "Bengaluru, Karnataka",
+    fullStory: `“We were four children in our family. My parents worked at the City Bus Stand in Mysuru, and we did not own a house. The streets were our home. When I was only three years old, my parents passed away after suffering from severe health problems. I do not know exactly what happened to them, but their loss changed our lives completely.
+
+After my parents’ death, my aunt took care of us. She worked as a rag picker, and I often accompanied her along with my siblings. We wandered around the city collecting waste to earn money. Sometimes, I had to beg for a single meal, and many times we went to sleep on an empty stomach. Those were extremely difficult days, and I would never want any child to experience such a life.
+
+One day, while I was collecting rags with my aunt and siblings at Boti Bazaar, members of RLHP noticed us. They spoke to my aunt and me about education, childhood and the importance of giving children a safe and secure environment. They visited us regularly and eventually invited us to Asha Kirana Boys’ Shelter Home. We agreed to go with them, and that decision changed our lives.
+
+At Asha Kirana, I was welcomed with warmth and care. I was provided with new clothes, nutritious food and a safe place to live. Initially, I joined the non-formal education programme and was later admitted to a government school. For the first time, I experienced the care and affection of people who treated me like family.
+
+I successfully completed my SSLC. Later, I developed a strong interest in carpentry and decided to pursue it as a career. With RLHP’s support, I was sent to Seva Sadhana, a vocational training centre in Bengaluru, where I received training in woodwork and carpentry.
+
+Today, I am a skilled carpenter and earn around ₹15,000 per month. I am self-reliant and no longer depend on anyone to meet my basic needs. Asha Kirana not only transformed my life but also gave my brother a better future, while my sister received support through Asha Bhavana. I am proud to have grown up under the care and guidance of RLHP.
+
+My dream is to start my own carpentry business and create opportunities for children who come from difficult backgrounds like mine. I want to support other children and contribute to society, especially those from deprived communities. I will always be grateful to RLHP and Asha Kirana for giving me a safe home, education, skills and, most importantly, a dignified life.”
+
+— Narayana, Bengaluru`,
+    isPlaceholder: false
+  },
+  {
+    id: "story-4",
+    title: "Construction of a CC Road in Kashiram Thanda",
+    programme: "Bottom-Up Governance & Community Advocacy",
+    image: "/images/gallery/gram_sabha_awareness.jpg",
+    summary: "For over 3 decades, 50 households in Kashiram Thanda lacked a motorable road. After advocacy through RLHP's Mass Contact Programme and Application Mela, government sanctioned and completed a cement concrete (CC) road.",
+    author: "Kashiram Thanda Community",
+    location: "Chincholi Taluk, Kalaburagi",
+    fullStory: `Kashiram Thanda, located under Ainoli Gram Panchayat in Chincholi Taluk, is home to around 50 households and more than 500 residents. For over three decades, the community struggled with a poorly maintained mud road that became muddy and waterlogged during the rainy season.
+
+The poor road conditions created serious difficulties for the community. Children faced challenges in reaching school, while villagers struggled to access healthcare, markets, workplaces and other essential services. A tragic incident in which a pregnant woman reportedly lost her life after an ambulance or private vehicle could not reach the village in time further highlighted the urgent need for a permanent road.
+
+During RLHP’s Mass Contact Programme (MCP) and Application Mela, the Youth and Women’s Groups came together and submitted a written request to the concerned government authorities for the construction of a cement concrete (CC) road.
+
+RLHP staff facilitated community meetings, coordinated with the Gram Panchayat and relevant government officials, and ensured continuous follow-up until the request received attention. As a result of the community’s collective efforts and persistent advocacy, the government sanctioned and completed the CC road.
+
+The new road has brought a significant change to everyday life in Kashiram Thanda. Villagers now have improved year-round access to schools, healthcare facilities, markets and workplaces. Children can travel to school more safely, attendance has improved, and parents have greater confidence in supporting their children’s education.
+
+This case demonstrates how community mobilisation, collective action and sustained advocacy, supported by RLHP, can help rural communities address long-standing challenges and bring lasting improvements to their quality of life.`,
+    isPlaceholder: false
+  },
+  {
+    id: "story-5",
+    title: "Community Action Against Illegal Liquor Sales",
+    programme: "Women Empowerment & Social Action",
+    image: "/images/gallery/shg_leadership_training.jpg",
+    summary: "In Mirzapur village (Basavakalyana Taluk), widespread illegal liquor sales led to domestic violence and child neglect. Guided by RLHP, women submitted a written petition to the Excise Department, stopping illegal sales overnight.",
+    author: "Mirzapur Village Women & Community",
+    location: "Basavakalyana Taluk, Kalaburagi",
+    fullStory: `Mirzapur village, under Sastapur Gram Panchayat in Basavakalyana Taluk, had been struggling with illegal liquor sales for several years. The widespread availability of alcohol contributed to addiction, domestic violence, financial hardship, child neglect and disturbances in the community.
+
+During regular household visits and meetings with women and Adolescent Girls’ Groups, RLHP identified illegal liquor sales as a serious concern affecting the safety and well-being of families. RLHP conducted awareness programmes on the harmful effects of alcohol abuse and encouraged women and community members to come together and take collective action.
+
+With guidance and support from RLHP, the women submitted a written petition to the Excise Department, requesting immediate action against the illegal liquor sellers. The very next day, Excise Department officials visited the village, conducted an inspection and stopped the illegal sale of liquor. The offenders were also warned of strict legal action.
+
+The intervention brought positive changes to the community. Domestic violence, family disputes and public disturbances were reduced, creating a safer environment for women, children and elderly people. Families also experienced greater financial stability as household income was no longer being spent on alcohol. Young people became more focused on their education and livelihoods.
+
+This case demonstrates how community mobilisation, women’s leadership and sustained support from RLHP, in coordination with government departments, can help address long-standing social issues and create safer, healthier and more peaceful communities.`,
+    isPlaceholder: false
+  },
+  {
+    id: "story-6",
+    title: "Breaking Gender Barriers Through Folk Art",
+    programme: "Adolescent Girls Empowerment & Kamsale Folk Art",
+    image: "/images/gallery/child_rights_conference.jpg",
+    summary: "In Bannithalapura, girls formed the Kiran Bedi Kishori Group and broke gender taboos by learning Kamsale folk dance. They won 1st prize at Hobli and Taluk levels, 3rd at District level, and performed at Rangayana Theatre Mysuru.",
+    author: "Kiran Bedi Kishori Group",
+    location: "Bannithalapura, Chamarajanagar",
+    fullStory: `Bannithalapura is located 12 km from Gundlupete and has 1,090 households with a population of around 4,080. The village has a school from Class 1 to 10, with more than 300 children enrolled, along with three Anganwadi centres, a milk dairy, Gram Panchayat office and Primary Health Centre. Agriculture is the main source of livelihood, while traditional beliefs and practices continue to influence community life.
+
+For the past four years, RLHP has been working in Bannithalapura with women, children, adolescent girls and youth, promoting group formation and community participation. With the support of teachers, children have also been encouraged to participate in sports such as volleyball, kabaddi and kho-kho.
+
+RLHP formed the Kiran Bedi Kishori Group and conducted weekly meetings to promote adolescent girls’ participation, rights, confidence and overall development, with a special focus on addressing gender discrimination. Sports, cultural activities and traditional folk arts were used as effective tools to develop leadership and self-confidence among the girls.
+
+During one such meeting, the girls expressed their interest in learning Kamsale, a traditional folk-art form. However, a long-standing belief in the village held that girls should not touch or perform Kamsale. When the girls began learning the art, some community members discouraged them and warned them against participating. Despite these challenges, the girls remained determined and continued their practice with the encouragement and support of RLHP.
+
+Their hard work soon brought recognition. The girls won first prize at both the Hobli and Taluk levels and secured third prize at the district level. They were later invited to perform at Rangayana Theatre, Mysuru, during a training programme for district-level officers, where their performance was highly appreciated.
+
+The girls’ achievements gradually changed community attitudes. Villagers who had once questioned their participation began to take pride in their accomplishments and recognise their abilities.
+
+This success story demonstrates how cultural activities can become powerful tools for challenging gender stereotypes and creating opportunities for girls. Through the Kiran Bedi Kishori Group, RLHP enabled adolescent girls to develop confidence, leadership and skills while gaining recognition within and beyond their community. Their journey shows that when girls are given opportunities and support, they can challenge traditional barriers and become confident leaders in their communities.`,
+    isPlaceholder: false
+  },
+  {
+    id: "story-7",
+    title: "Sneha’s Story",
+    programme: "Asha Bhavana Girls’ Home & Paramedical Education",
+    image: "/images/gallery/ashabhavana_girls_learning.jpg",
+    summary: "Arrived at Asha Bhavana in 2009 at age 5 after losing her parents' care. Received love, schooling, and guidance, and went on to complete paramedical studies in Channarayapatna. Today, she works independently.",
+    author: "Sneha",
+    location: "Channarayapatna, Hassan",
+    fullStory: `“I came to Asha Bhavana in 2009 when I was only five years old. At such a young age, I had lost my parents’ care and had no one who could take responsibility for me. I was brought to Asha Bhavana by members of a women’s organization in Kurimandi, Mysuru, who understood my situation and wanted me to have a safe and secure future.
+
+When I first arrived, I was very small and weak and found it difficult to adjust to my new surroundings. I needed support in many ways, including maintaining personal hygiene and developing discipline. At Asha Bhavana, I received love, care, counselling and guidance. I was enrolled in school and encouraged to attend regularly. The support and encouragement I received helped me grow in confidence and improve both in my studies and in my personal life.
+
+With continued guidance, I completed my schooling and later pursued paramedical studies. I joined a paramedical course in Channarayapatna and successfully completed my studies. Today, I am working independently and am able to support myself.
+
+I am grateful for the care, education and guidance I received at Asha Bhavana. The support I received during my childhood helped me become confident, independent and self-reliant. Asha Bhavana gave me the opportunity to build a better future and live my life with dignity.”
+
+— Sneha`,
+    isPlaceholder: false
+  },
+  {
+    id: "story-8",
+    title: "Guna’s Journey from Vulnerability to Independence",
+    programme: "Asha Kirana & Electrician Vocational Skills",
+    image: "/images/gallery/youth_computer_training.jpg",
+    summary: "Son of sanitation workers, Guna joined Asha Kirana after losing his father to alcoholism. He scored 501 marks in SSLC and completed electrician training at Seva Sadhana. Today he earns ₹18,000/month as an Electrician at St. John’s Hospital Bengaluru.",
+    author: "Guna",
+    location: "Mysuru / Bengaluru",
+    fullStory: `“I am Guna, a resident of Mysuru. My parents worked as sanitation workers. My father struggled with alcohol addiction and later passed away due to health complications. After his death, my mother, Bannamma, took complete responsibility for raising my elder brother Subramanya and me. Despite facing many difficulties, she worked hard to give us a better life.
+
+About 12 years ago, RLHP staff identified our vulnerable situation and admitted both my brother and me to the Asha Kirana Child Care Centre. Coming to Asha Kirana brought a major change in my life. I received regular health care, nutritious food, proper hygiene and grooming, a safe environment and, most importantly, love and guidance.
+
+When I was around six years old, I was enrolled in MC Hundi School in the first standard. Initially, I was slow in learning and often fell asleep in the classroom. The staff and senior children at Asha Kirana patiently supported me and encouraged me to improve. Gradually, I became more confident and started doing better in my studies.
+
+Asha Kirana also gave me opportunities to participate in cultural activities such as folk dance, Kamsale, art and craft. These activities helped me develop confidence and discover my interests beyond academics.
+
+In the 2019–20 academic year, I appeared for the SSLC examination. With the support of special classes, TV lessons and my own hard work, I secured 501 marks. This achievement gave me the confidence to think about my future and become independent.
+
+I was always interested in vocational skills, so I joined a two-year Electrician and Plumbing course at Seva Sadhana Institute in Bengaluru. With the guidance of my mentors and support from Asha Kirana staff, I successfully completed the training and gained one year of practical work experience in Mysuru.
+
+My skills and dedication helped me secure a job as an Electrician at St. John’s Hospital in Bengaluru. Today, I earn ₹18,000 per month and am proud to be financially independent.
+
+I now have several dreams for my future. I want to build a house in Mysuru, support my mother, help arrange my brother’s marriage and, most importantly, support the children of Asha Kirana in the future.
+
+I am grateful to Asha Kirana for giving me care, education, skills and the confidence to build my own life. The support I received has transformed my life and helped me become independent. I hope that one day I can give back by helping other children who are going through difficulties, just as I was helped.”
+
+— Guna`,
+    isPlaceholder: false
+  },
+  {
+    id: "story-9",
+    title: "A Mother’s Joy in Her Child’s Recovery",
+    programme: "Maternal & Child Health & Nutrition",
+    image: "/images/gallery/maternal_health_awareness.jpg",
+    summary: "3-year-old Manoj from Kumbrallimata weighed only 10.5 kg and was weak. RLHP guided Shruti to enroll him in Anganwadi with regular nutritious meals, eggs, ragi mixture, and Spirulina. Manoj now weighs a healthy 13.1 kg.",
+    author: "Shruti",
+    location: "Kumbrallimata Village, Mysuru",
+    fullStory: `“My name is Shruti, and I am the mother of my three-year-old son, Manoj. There was a time when I felt deeply worried and helpless seeing my child so weak. At an age when he should have been active and healthy, he weighed only 10.5 kg. As a mother, it was painful to see him that way, but I did not know what to do or how to help him.
+
+Manoj was not attending the Anganwadi and spent most of his time playing outside. He was not receiving proper food at regular intervals, and I was not aware of how important good nutrition is for a child’s growth and development.
+
+Everything began to change when the Rural Literacy and Health Programme (RLHP) visited our village. The RLHP team identified my child’s condition and guided me with care and patience. They did not simply give us advice; they supported us throughout the process. With their guidance, we enrolled Manoj in the Anganwadi, where he began receiving regular nutritious meals, eggs and supplements such as ragi mixture and Spirulina.
+
+Slowly, I began to notice a positive change in my child. He became more active, started eating better and gradually regained his happiness and energy. As a mother, seeing these changes brought me immense relief and joy.
+
+Today, Manoj weighs 13.1 kg. He is healthy, happy and enjoys playing with other children. Seeing him grow and play with confidence fills my heart with happiness.
+
+I am deeply thankful to RLHP and the Anganwadi worker for their care and support. RLHP not only helped my child move towards a healthier life but also helped me understand the importance of nutrition and better childcare. Their support has truly made a meaningful difference in our lives.”
+
+— Shruti, Kumbrallimata Village`,
+    isPlaceholder: false
+  },
+  {
+    id: "story-10",
+    title: "A Journey Towards a Brighter Future",
+    programme: "Child Sponsorship & Entrepreneurship Development (EDP)",
+    image: "/images/gallery/nutrition_kit_distribution.jpg",
+    summary: "Zoya joined the RLHP & ChildFund sponsorship programme 8 years ago. Support guided her education while her mother completed EDP training and received a ₹20,000 seed grant to start a flower business.",
+    author: "Zoya Sulthana",
     location: "Mysuru, Karnataka",
+    fullStory: `“My name is Zoya Sulthana. I live with my parents, Syed Vaseem and Farhana, and my two sisters, Zaiba and Asiya. My family faced financial difficulties for many years. My father worked as a daily wage labourer, and his income was irregular. My mother took care of our home, and supporting the education of three children was often a challenge for my family.
+
+I became part of the sponsorship programme supported by Rural Literacy and Health Programme (RLHP) in partnership with ChildFund International eight years ago. The support and guidance we received brought hope to our family during difficult times. Through the programme, we received guidance on child protection, health, hygiene and the importance of education. The letters and greetings I received from my sponsor were especially encouraging and made me feel supported and motivated.
+
+As I grew older, I participated in youth development sessions conducted through the programme. These sessions helped me develop good hygiene practices, life skills and greater confidence in my education.
+
+The support also helped my mother build a livelihood. She participated in an Entrepreneurship Development Programme (EDP) conducted with support from RLHP. Through the training, she learned about business skills, financial management and government schemes. She later received a seed grant of ₹20,000, which helped her start a small flower business.
+
+Today, my mother’s business provides an additional source of income for our family. It helps us meet household expenses and has made it easier for my sisters and me to continue our education.
+
+I am deeply grateful to RLHP and ChildFund International for supporting me and my family. Their guidance has given us confidence, opportunities and hope. Inspired by my mother’s hard work and the support we have received, I want to complete my education, build a bright future, support my family and become a positive role model for other children facing similar challenges.
+
+This support has taught me that with the right opportunities, guidance and encouragement, families can overcome difficulties and children can move towards a better future.”
+
+— Zoya Sulthana`,
+    isPlaceholder: false
+  },
+  {
+    id: "story-11",
+    title: "Testimonial – Neha Anjum",
+    programme: "Child Support & DFC Sponsorship",
+    image: "/images/stories/neha_anjum.jpg",
+    summary: "Supported by ChildFund and RLHP including DFC assistance, Neha completed her M.Com with Distinction. An aspiring Bank Manager, she developed strong leadership, teamwork, and communication skills through youth meetings.",
+    author: "Neha Anjum",
+    location: "M.Com Graduate, Mysuru",
+    fullStory: `“I am very grateful to ChildFund and my sponsor for the support and encouragement they have given me throughout my education. With their continued support, including DFC assistance, I was able to meet my educational needs and successfully complete my M. Com with Distinction.
+
+Accountancy has always been my favourite subject, and my dream is to become a Bank Manager. During my college studies, I completed a project and received a good grade, which gave me greater confidence in my abilities.
+
+One of my most memorable experiences with the ChildFund programme was participating in a youth meeting. Meeting young people from different communities, sharing ideas and experiences, and taking part in group discussions, games and activities helped me develop my leadership, teamwork, confidence and communication skills.
+
+I sincerely thank my sponsor and ChildFund for believing in me and supporting my educational journey. Their encouragement has motivated me to work towards my goals. I look forward to building a bright future and achieving my dream of becoming a Bank Manager.”
+
+— Neha Anjum`,
     isPlaceholder: false
   }
 ];
@@ -864,14 +1082,14 @@ export const galleryData = [
 
 
 export const fundingPartners = [
-  { name: "Magneti Marelli", logoText: "Magneti Marelli", project: "Empowering backward districts to access public schemes" },
-  { name: "WIPRO Cares / Wipro Foundation", logoText: "Wipro Cares", project: "Community development through Health & Sanitation" },
-  { name: "AMADEUS", logoText: "AMADEUS", project: "Child focused integrated development" },
-  { name: "Klüber Lubrication Pvt Ltd", logoText: "Klüber Lubrication", project: "Education support for underprivileged children" },
-  { name: "Azim Premji Philanthropic Initiatives", logoText: "Azim Premji Foundation", project: "Early childhood development & rights" },
-  { name: "Terre des Hommes (TdH - Germany)", logoText: "TdH (G)", project: "Child rights & protection network" },
-  { name: "ChildFund India", logoText: "ChildFund", project: "Community health & sanitation" },
-  { name: "Mission Inde", logoText: "Mission Inde", project: "Rural literacy & education initiatives" }
+  { name: "Azim Premji Philanthropic Initiatives (APPI)", logoText: "APPI", logoImage: "/images/partners/azim-premji-logo.png", project: "Early childhood development & rights" },
+  { name: "Wipro Foundation", logoText: "Wipro Foundation", logoImage: "/images/partners/wipro-foundation-logo.jpg", project: "Community development through Health & Sanitation" },
+  { name: "ChildFund International", logoText: "ChildFund International", logoImage: "/images/partners/childfund-logo.png", project: "Child protection & youth sponsorship" },
+  { name: "Mission Inde", logoText: "Mission Inde", logoImage: "/images/partners/mission-inde-logo.jpg", project: "Rural literacy & education initiatives" },
+  { name: "Klüber Lubrication Pvt. Ltd.", logoText: "Klüber Lubrication", logoImage: "/images/partners/kluber-lubrication-logo.png", project: "Education support for underprivileged children" },
+  { name: "Magneti Marelli", logoText: "Magneti Marelli", logoImage: null, project: "Empowering backward districts to access public schemes" },
+  { name: "AMADEUS", logoText: "AMADEUS", logoImage: null, project: "Child focused integrated development" },
+  { name: "Terre des Hommes (TdH - Germany)", logoText: "TdH (G)", logoImage: null, project: "Child rights & protection network" }
 ];
 
 export const governmentDepartments = [

@@ -309,10 +309,20 @@ export default function Home({ setCurrentPage, onNavClick, onOpenDonate, onSelec
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-4">
               {fundingPartners.map((partner, idx) => (
-                <div key={idx} className="bg-white p-4 rounded-xl border border-gray-200 shadow-2xs text-center flex flex-col items-center justify-center space-y-1 hover:border-rlhp-green transition-all group">
-                  <span className="font-extrabold text-xs text-gray-900 group-hover:text-rlhp-darkgreen">{partner.logoText}</span>
+                <div key={idx} className="bg-white p-4 rounded-xl border border-gray-200 shadow-xs text-center flex flex-col items-center justify-between min-h-[120px] hover:border-rlhp-green hover:shadow-md transition-all group">
+                  <div className="h-14 flex items-center justify-center w-full px-2">
+                    {partner.logoImage ? (
+                      <img 
+                        src={`${import.meta.env.BASE_URL}${partner.logoImage.replace(/^\//, '')}`} 
+                        alt={`${partner.name} Logo`}
+                        className="max-h-12 max-w-full object-contain filter group-hover:brightness-105 transition-all"
+                      />
+                    ) : (
+                      <span className="font-extrabold text-xs text-gray-900 group-hover:text-rlhp-darkgreen">{partner.logoText}</span>
+                    )}
+                  </div>
                   {partner.project && (
-                    <span className="text-[10px] text-gray-500 line-clamp-2 font-medium">{partner.project}</span>
+                    <span className="text-[10px] text-gray-500 line-clamp-2 font-medium mt-2">{partner.project}</span>
                   )}
                 </div>
               ))}

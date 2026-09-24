@@ -1,5 +1,4 @@
-import React from 'react';
-import { orgDetails } from '../data/rlhpData';
+import { orgDetails, fundingPartners } from '../data/rlhpData';
 import { Target, Compass, Flag, Users, Shield, CheckCircle2, AlertCircle } from 'lucide-react';
 
 export default function AboutUs({ setCurrentPage }) {
@@ -7,7 +6,6 @@ export default function AboutUs({ setCurrentPage }) {
     <div className="space-y-12 font-sans pb-12">
       {/* Top Page Header Banner */}
       <section className="relative bg-rlhp-darkgreen text-white py-16 px-4 sm:px-8 overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#4CAF50_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div className="relative z-10 max-w-7xl mx-auto text-center">
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">About RLHP</h1>
         </div>
@@ -56,106 +54,152 @@ export default function AboutUs({ setCurrentPage }) {
           </div>
         </section>
 
-        {/* Vision, Mission & Goal Cards - Exact UI matching middle image mockup */}
+        {/* Vision & Mission Cards */}
         <section id="vision-mission" className="space-y-6">
           <div className="text-center max-w-xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl font-bold text-rlhp-darkgreen">Our Vision, Mission & Goal</h2>
-            <p className="text-xs text-gray-500 mt-1">The foundational pillars driving our community work</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-rlhp-darkgreen">Our Vision & Mission</h2>
+            <p className="text-xs text-gray-500 mt-1">The foundational pillars driving our 42+ years of community action</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Vision Card */}
-            <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-2xs text-center space-y-4 hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 rounded-full bg-rlhp-lightgreen text-rlhp-green flex items-center justify-center mx-auto">
-                <Compass size={32} />
+            <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-xs space-y-4 hover:shadow-md transition-shadow">
+              <div className="w-14 h-14 rounded-full bg-rlhp-lightgreen text-rlhp-green flex items-center justify-center">
+                <Compass size={28} />
               </div>
-              <h3 className="text-lg font-bold text-gray-900">Vision</h3>
-              <p className="text-xs text-gray-600 leading-relaxed">
-                To create a just, free, equitable and sustainable society.
+              <h3 className="text-xl font-extrabold text-rlhp-darkgreen">Vision</h3>
+              <p className="text-sm text-gray-700 leading-relaxed font-medium">
+                "{orgDetails.vision}"
               </p>
             </div>
 
             {/* Mission Card */}
-            <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-2xs text-center space-y-4 hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 rounded-full bg-orange-100 text-rlhp-orange flex items-center justify-center mx-auto">
-                <Target size={32} />
+            <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-xs space-y-4 hover:shadow-md transition-shadow">
+              <div className="w-14 h-14 rounded-full bg-orange-100 text-rlhp-orange flex items-center justify-center">
+                <Target size={28} />
               </div>
-              <h3 className="text-lg font-bold text-gray-900">Mission</h3>
-              <p className="text-xs text-gray-600 leading-relaxed">
-                To empower children, women and deprived sections in urban, rural and in areas affected by natural disasters and climate change to respond to the challenges of growing poverty and rights violations through collective and affirmative action leading to equitable, sustainable development and self-reliance.
-              </p>
-            </div>
-
-            {/* Goal Card - Marked (Need to Update) */}
-            <div className="bg-white p-8 rounded-2xl border border-dashed border-gray-300 shadow-2xs text-center space-y-4 hover:shadow-md transition-shadow relative">
-              <span className="absolute top-3 right-3 text-[10px] bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded-full flex items-center space-x-1">
-                <AlertCircle size={10} />
-                <span>(Need to Update)</span>
-              </span>
-              <div className="w-16 h-16 rounded-full bg-green-50 text-rlhp-green flex items-center justify-center mx-auto">
-                <Flag size={32} />
-              </div>
-              <h3 className="text-lg font-bold text-gray-900">Goal</h3>
-              <p className="text-xs text-gray-500 italic leading-relaxed">
-                The detailed strategic goal statement for the upcoming cycle will be updated upon finalization by the RLHP board.
+              <h3 className="text-xl font-extrabold text-rlhp-darkgreen">Mission</h3>
+              <p className="text-xs text-gray-700 leading-relaxed">
+                "{orgDetails.mission}"
               </p>
             </div>
           </div>
         </section>
 
-        {/* RLHP Board & Governance Section */}
-        <section id="governance" className="space-y-6">
-          <div className="text-center max-w-xl mx-auto">
+        {/* Founders & Leadership Section */}
+        <section id="governance" className="space-y-8">
+          <div className="text-center max-w-xl mx-auto space-y-2">
             <span className="text-xs font-bold text-rlhp-orange uppercase tracking-wider bg-orange-100 px-3 py-1 rounded-full">
               Leadership & Governance
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-rlhp-darkgreen mt-2">RLHP Board & Governance</h2>
-            <p className="text-xs text-gray-500 mt-1">Guided by experienced social leaders, development experts, and community trustees</p>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-rlhp-darkgreen">Founders & Board Members</h2>
+            <p className="text-xs text-gray-500">Guided by experienced social pioneers, development leaders, and community trustees</p>
           </div>
 
-          {/* Key Executive Office Bearers */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {/* President */}
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-2xs text-center space-y-3 hover:border-rlhp-green transition-all">
-              <div className="w-16 h-16 rounded-full bg-rlhp-lightgreen text-rlhp-green flex items-center justify-center mx-auto shadow-sm">
-                <Users size={32} />
+          {/* Founders Card */}
+          <div className="bg-gradient-to-r from-emerald-900 to-rlhp-darkgreen text-white p-6 sm:p-8 rounded-2xl shadow-lg space-y-4">
+            <div className="flex items-center space-x-3">
+              <div className="p-2 bg-white/10 rounded-lg">
+                <Users className="text-rlhp-orange" size={24} />
               </div>
               <div>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-rlhp-orange bg-orange-50 px-2 py-0.5 rounded">
+                <h3 className="text-xl font-extrabold">RLHP Founders</h3>
+                <p className="text-xs text-rlhp-lightgreen">Pioneered grassroots development in Mysuru since 1983</p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 border-t border-white/10">
+              <div className="bg-white/10 p-4 rounded-xl flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-full bg-rlhp-orange text-white flex items-center justify-center font-bold text-sm">JM</div>
+                <div>
+                  <h4 className="font-extrabold text-sm text-white">Mr. Joy Maliekal</h4>
+                  <p className="text-xs text-gray-300">Co-Founder, RLHP</p>
+                </div>
+              </div>
+
+              <div className="bg-white/10 p-4 rounded-xl flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-full bg-rlhp-orange text-white flex items-center justify-center font-bold text-sm">PJ</div>
+                <div>
+                  <h4 className="font-extrabold text-sm text-white">Mrs. Philomena Joy</h4>
+                  <p className="text-xs text-gray-300">Co-Founder, RLHP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Executive Office Bearers */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {/* President */}
+            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-2xs text-center space-y-3 hover:border-rlhp-green transition-all group">
+              <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-rlhp-green mx-auto shadow-md group-hover:scale-105 transition-all">
+                <img 
+                  src={`${import.meta.env.BASE_URL}images/team/gita_mithra.jpg`} 
+                  alt="Mrs. Gita Mitra - President, RLHP" 
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-rlhp-orange bg-orange-50 px-2.5 py-0.5 rounded-full">
                   President
                 </span>
-                <h3 className="text-lg font-extrabold text-gray-900 mt-1">Ms. Gita Mitra</h3>
-                <p className="text-xs text-gray-500 mt-0.5">President, RLHP Board</p>
+                <h3 className="text-lg font-extrabold text-gray-900 mt-1.5">Mrs. Gita Mitra</h3>
+                <p className="text-xs text-gray-500 font-medium mt-0.5">President, RLHP Board</p>
               </div>
             </div>
 
             {/* Secretary / Director */}
-            <div className="bg-white p-6 rounded-2xl border-2 border-rlhp-green shadow-md text-center space-y-3 relative">
+            <div className="bg-white p-6 rounded-2xl border-2 border-rlhp-green shadow-md text-center space-y-3 relative group">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-rlhp-green text-white text-[10px] font-extrabold px-3 py-0.5 rounded-full shadow-xs uppercase tracking-wider">
-                Founder & Executive Secretary
+                Secretary & Director
               </span>
-              <div className="w-16 h-16 rounded-full bg-emerald-100 text-rlhp-darkgreen flex items-center justify-center mx-auto shadow-sm mt-1">
-                <Users size={32} />
+              <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-rlhp-green mx-auto shadow-md group-hover:scale-105 transition-all mt-1">
+                <img 
+                  src={`${import.meta.env.BASE_URL}images/team/jose_vk.jpg`} 
+                  alt="Mr. Jose V.K. - Secretary & Director, RLHP" 
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
               <div>
-                <h3 className="text-lg font-extrabold text-rlhp-darkgreen">Mr. Jose V.K.</h3>
+                <h3 className="text-lg font-extrabold text-rlhp-darkgreen mt-1">Mr. Jose V.K.</h3>
                 <p className="text-xs text-rlhp-green font-bold mt-0.5">Secretary & Director</p>
-                <p className="text-[11px] text-gray-600 mt-1 leading-snug">Pioneered RLHP's 42+ year legacy in child development, women sanghas & rural health.</p>
+                <p className="text-[11px] text-gray-600 mt-1 leading-snug">Leading RLHP's 42+ year legacy in child development, women sanghas & rural health.</p>
               </div>
             </div>
 
             {/* Treasurer */}
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-2xs text-center space-y-3 hover:border-rlhp-green transition-all">
-              <div className="w-16 h-16 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center mx-auto shadow-sm">
-                <Shield size={32} />
+            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-2xs text-center space-y-3 hover:border-rlhp-green transition-all group">
+              <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-rlhp-green mx-auto shadow-md group-hover:scale-105 transition-all">
+                <img 
+                  src={`${import.meta.env.BASE_URL}images/team/santhosh_kumar.jpg`} 
+                  alt="Mr. Santhosh Kumar - Treasurer, RLHP" 
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
               <div>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full">
                   Treasurer
                 </span>
-                <h3 className="text-lg font-extrabold text-gray-900 mt-1">Mr. Santhosh Kumar</h3>
-                <p className="text-xs text-gray-500 mt-0.5">Treasurer, Financial Oversight</p>
+                <h3 className="text-lg font-extrabold text-gray-900 mt-1.5">Mr. Santhosh Kumar</h3>
+                <p className="text-xs text-gray-500 font-medium mt-0.5">Treasurer, Financial Oversight</p>
               </div>
+            </div>
+          </div>
+
+          {/* Full Board Members List */}
+          <div className="bg-gray-50 p-6 rounded-2xl border border-gray-200 space-y-4">
+            <h4 className="text-sm font-bold text-gray-900 uppercase tracking-wider">Governing Board Members</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              {orgDetails.boardMembers.map((member, idx) => (
+                <div key={idx} className="bg-white p-3.5 rounded-xl border border-gray-200 flex items-center space-x-3 shadow-2xs">
+                  <div className="w-8 h-8 rounded-full bg-rlhp-lightgreen text-rlhp-green flex items-center justify-center font-bold text-xs shrink-0">
+                    {idx + 1}
+                  </div>
+                  <div>
+                    <h5 className="font-bold text-xs text-gray-900">{member.name}</h5>
+                    <span className="text-[10px] text-rlhp-green font-semibold">{member.designation}</span>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -181,6 +225,37 @@ export default function AboutUs({ setCurrentPage }) {
                 <p className="text-[11px] text-gray-600 leading-relaxed pl-8">
                   {app.description}
                 </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Partners & Supporters Section */}
+        <section id="partners" className="bg-rlhp-lightgreen/30 p-8 rounded-2xl border border-rlhp-green/20 space-y-6">
+          <div className="max-w-xl mx-auto text-center space-y-1">
+            <h3 className="text-xl sm:text-2xl font-bold text-rlhp-darkgreen">Our Institutional & Funding Partners</h3>
+            <p className="text-xs text-gray-600">
+              Generously collaborating with RLHP to champion child rights, maternal health, and grassroots empowerment.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {fundingPartners.map((partner, idx) => (
+              <div key={idx} className="bg-white p-4 rounded-xl border border-gray-200 shadow-2xs text-center flex flex-col items-center justify-between min-h-[110px] hover:border-rlhp-green transition-all group">
+                <div className="h-14 flex items-center justify-center w-full">
+                  {partner.logoImage ? (
+                    <img 
+                      src={`${import.meta.env.BASE_URL}${partner.logoImage.replace(/^\//, '')}`} 
+                      alt={`${partner.name} Logo`}
+                      className="max-h-12 max-w-full object-contain transition-transform group-hover:scale-105"
+                    />
+                  ) : (
+                    <span className="font-extrabold text-xs text-gray-900 group-hover:text-rlhp-darkgreen">{partner.logoText}</span>
+                  )}
+                </div>
+                {partner.project && (
+                  <span className="text-[10px] text-gray-500 line-clamp-2 font-medium mt-1">{partner.project}</span>
+                )}
               </div>
             ))}
           </div>
