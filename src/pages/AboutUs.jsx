@@ -113,7 +113,7 @@ export default function AboutUs({ setCurrentPage }) {
                 <div className="w-10 h-10 rounded-full bg-rlhp-orange text-white flex items-center justify-center font-bold text-sm">JM</div>
                 <div>
                   <h4 className="font-extrabold text-sm text-white">Mr. Joy Maliekal</h4>
-                  <p className="text-xs text-gray-300">Co-Founder, RLHP</p>
+                  <p className="text-xs text-gray-300">Founder, RLHP</p>
                 </div>
               </div>
 
@@ -121,7 +121,7 @@ export default function AboutUs({ setCurrentPage }) {
                 <div className="w-10 h-10 rounded-full bg-rlhp-orange text-white flex items-center justify-center font-bold text-sm">PJ</div>
                 <div>
                   <h4 className="font-extrabold text-sm text-white">Mrs. Philomena Joy</h4>
-                  <p className="text-xs text-gray-300">Co-Founder, RLHP</p>
+                  <p className="text-xs text-gray-300">Founder, RLHP</p>
                 </div>
               </div>
             </div>
