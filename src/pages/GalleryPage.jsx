@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { galleryData } from '../data/rlhpData';
+import { galleryData, newsArticlesData } from '../data/rlhpData';
 import { Image as ImageIcon, ExternalLink, Newspaper, ZoomIn, Camera } from 'lucide-react';
 
 export default function GalleryPage({ onSelectMedia }) {
@@ -14,11 +14,7 @@ export default function GalleryPage({ onSelectMedia }) {
     return galleryData.filter(g => g.category === cat).length;
   };
 
-  const mediaClippings = [
-    { title: "RLHP Mysuru Receives State Nalwadi Krishnaraja Odeyar Award 2025", paper: "Deccan Herald / Star of Mysore", date: "Jan 2025" },
-    { title: "78 Child Rights Clubs Voice School Safety Demands in Mysuru", paper: "Prajavani", date: "May 2025" },
-    { title: "Women Sanghas Drive Organic Farming & Self-Reliance in Chamarajanagar", paper: "Kannada Prabha", date: "Apr 2025" }
-  ];
+  const mediaClippings = newsArticlesData.filter(n => n.category === 'Press Coverage');
 
   return (
     <div className="space-y-12 font-sans pb-16">
