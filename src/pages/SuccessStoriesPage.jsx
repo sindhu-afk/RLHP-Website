@@ -22,11 +22,11 @@ export default function SuccessStoriesPage({ onSelectNews }) {
               className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-2xs hover:shadow-lg transition-all flex flex-col justify-between group"
             >
               <div>
-                <div className="relative h-52 overflow-hidden bg-gray-100">
+                <div className="relative h-56 overflow-hidden bg-slate-900 flex items-center justify-center">
                   <img 
                     src={story.image.startsWith('/') ? `${import.meta.env.BASE_URL}${story.image.slice(1)}` : story.image} 
                     alt={story.title} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300" 
                   />
                   <div className="absolute top-3 left-3 bg-rlhp-darkgreen/90 backdrop-blur-xs text-white text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider shadow-xs">
                     {story.programme}
