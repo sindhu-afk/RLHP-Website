@@ -48,7 +48,7 @@ export const orgDetails = {
   vision: "To create a just, free, equitable and sustainable society",
   mission: "To empower the marginalised poor in slums and villages, vulnerable children and others affected by natural calamities and climate changes to respond to the challenges of growing poverty and rights violations, through collective and affirmative action leading to sustainable development and self reliance.",
   founders: [
-    { name: "Mr. Joy Maliekal", designation: "Founder" },
+    { name: "Mr. Joy Maliekal", designation: "Founder", image: "/images/team/joy_maliekal.jpg" },
     { name: "Mrs. Philomena Joy", designation: "Founder" }
   ],
   boardMembers: [

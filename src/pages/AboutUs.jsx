@@ -109,19 +109,27 @@ export default function AboutUs({ setCurrentPage }) {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 border-t border-white/10">
-              <div className="bg-white/10 p-4 rounded-xl flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-full bg-rlhp-orange text-white flex items-center justify-center font-bold text-sm">JM</div>
+              <div className="bg-white/10 p-4 rounded-xl flex items-center space-x-3.5 hover:bg-white/15 transition-all">
+                <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-rlhp-orange shrink-0 bg-white/20 shadow-md">
+                  <img 
+                    src={`${import.meta.env.BASE_URL}images/team/joy_maliekal.jpg`} 
+                    alt="Mr. Joy Maliekal - Founder, RLHP" 
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
                 <div>
-                  <h4 className="font-extrabold text-sm text-white">Mr. Joy Maliekal</h4>
-                  <p className="text-xs text-gray-300">Founder, RLHP</p>
+                  <h4 className="font-extrabold text-sm sm:text-base text-white">Mr. Joy Maliekal</h4>
+                  <p className="text-xs text-rlhp-lightgreen font-medium">Founder, RLHP</p>
                 </div>
               </div>
 
-              <div className="bg-white/10 p-4 rounded-xl flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-full bg-rlhp-orange text-white flex items-center justify-center font-bold text-sm">PJ</div>
+              <div className="bg-white/10 p-4 rounded-xl flex items-center space-x-3.5 hover:bg-white/15 transition-all">
+                <div className="w-14 h-14 rounded-full bg-rlhp-orange/90 text-white flex items-center justify-center font-extrabold text-lg shrink-0 border-2 border-white/30 shadow-md">
+                  PJ
+                </div>
                 <div>
-                  <h4 className="font-extrabold text-sm text-white">Mrs. Philomena Joy</h4>
-                  <p className="text-xs text-gray-300">Founder, RLHP</p>
+                  <h4 className="font-extrabold text-sm sm:text-base text-white">Mrs. Philomena Joy</h4>
+                  <p className="text-xs text-rlhp-lightgreen font-medium">Founder, RLHP</p>
                 </div>
               </div>
             </div>
