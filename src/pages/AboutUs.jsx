@@ -124,8 +124,12 @@ export default function AboutUs({ setCurrentPage }) {
               </div>
 
               <div className="bg-white/10 p-4 rounded-xl flex items-center space-x-3.5 hover:bg-white/15 transition-all">
-                <div className="w-14 h-14 rounded-full bg-rlhp-orange/90 text-white flex items-center justify-center font-extrabold text-lg shrink-0 border-2 border-white/30 shadow-md">
-                  PJ
+                <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-rlhp-orange shrink-0 bg-white/20 shadow-md">
+                  <img 
+                    src={`${import.meta.env.BASE_URL}images/team/philomena_joy.jpg`} 
+                    alt="Mrs. Philomena Joy - Founder, RLHP" 
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
                 <div>
                   <h4 className="font-extrabold text-sm sm:text-base text-white">Mrs. Philomena Joy</h4>
