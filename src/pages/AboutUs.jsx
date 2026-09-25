@@ -185,21 +185,23 @@ export default function AboutUs({ setCurrentPage }) {
             </div>
           </div>
 
-          {/* Full Board Members List */}
+          {/* Additional Board Members List */}
           <div className="bg-gray-50 p-6 rounded-2xl border border-gray-200 space-y-4">
             <h4 className="text-sm font-bold text-gray-900 uppercase tracking-wider">Governing Board Members</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-              {orgDetails.boardMembers.map((member, idx) => (
-                <div key={idx} className="bg-white p-3.5 rounded-xl border border-gray-200 flex items-center space-x-3 shadow-2xs">
-                  <div className="w-8 h-8 rounded-full bg-rlhp-lightgreen text-rlhp-green flex items-center justify-center font-bold text-xs shrink-0">
-                    {idx + 1}
+              {orgDetails.boardMembers
+                .filter(member => !['President', 'Secretary & Director', 'Treasurer'].includes(member.designation))
+                .map((member, idx) => (
+                  <div key={idx} className="bg-white p-3.5 rounded-xl border border-gray-200 flex items-center space-x-3 shadow-2xs">
+                    <div className="w-8 h-8 rounded-full bg-rlhp-lightgreen text-rlhp-green flex items-center justify-center font-bold text-xs shrink-0">
+                      {idx + 1}
+                    </div>
+                    <div>
+                      <h5 className="font-bold text-xs text-gray-900">{member.name}</h5>
+                      <span className="text-[10px] text-rlhp-green font-semibold">{member.designation}</span>
+                    </div>
                   </div>
-                  <div>
-                    <h5 className="font-bold text-xs text-gray-900">{member.name}</h5>
-                    <span className="text-[10px] text-rlhp-green font-semibold">{member.designation}</span>
-                  </div>
-                </div>
-              ))}
+                ))}
             </div>
           </div>
         </section>
