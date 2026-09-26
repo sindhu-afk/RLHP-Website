@@ -57,26 +57,111 @@ export default function AboutUs({ setCurrentPage }) {
           </div>
         </section>
 
-        {/* Vision, Mission & Core Values */}
-        <section id="vision-mission" className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-gradient-to-br from-rlhp-darkgreen to-emerald-950 text-white p-8 rounded-2xl shadow-md space-y-4">
-            <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-rlhp-orange">
-              <Compass size={28} />
+        {/* Vision, Mission & Core Values with Rich Interactive Mouse-Over Animations */}
+        <section id="vision-mission" className="space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            {/* Our Vision Card */}
+            <div className="group relative bg-gradient-to-br from-emerald-950 via-slate-900 to-emerald-900 text-white p-8 sm:p-10 rounded-3xl border border-emerald-500/20 shadow-xl overflow-hidden transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(16,185,129,0.3)] hover:border-emerald-400/60 cursor-pointer">
+              {/* Radial Mouseover Glow & Particle Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/15 via-emerald-400/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none blur-2xl"></div>
+              <div className="absolute -top-24 -left-24 w-60 h-60 bg-emerald-500/20 rounded-full blur-3xl group-hover:bg-emerald-400/30 transition-colors duration-700 pointer-events-none"></div>
+
+              {/* Top-Right Decorative Morphing Corner Accent */}
+              <div className="absolute top-0 right-0 w-36 h-36 bg-gradient-to-br from-emerald-400/20 to-transparent rounded-bl-full transform translate-x-10 -translate-y-10 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500 pointer-events-none"></div>
+
+              <div className="relative z-10 space-y-5">
+                <div className="flex items-center justify-between">
+                  {/* Animated Icon Box */}
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-emerald-800 to-slate-950 border border-emerald-400/30 flex items-center justify-center text-emerald-400 shadow-md group-hover:scale-110 group-hover:rotate-6 group-hover:bg-emerald-500 group-hover:text-slate-950 group-hover:shadow-[0_0_25px_rgba(16,185,129,0.8)] transition-all duration-500">
+                    <Compass className="w-7 h-7 sm:w-8 sm:h-8" />
+                  </div>
+
+                  <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 px-3 py-1 rounded-full group-hover:bg-emerald-400 group-hover:text-slate-950 transition-colors">
+                    Guiding Light
+                  </span>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl sm:text-3xl font-black tracking-tight text-white group-hover:text-emerald-300 transition-colors">
+                    Our Vision
+                  </h3>
+                  <p className="text-xs font-semibold text-emerald-400/80 mt-1">A Just, Free & Sustainable World</p>
+                </div>
+
+                <div className="relative pt-2">
+                  <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-light italic bg-white/5 p-4 rounded-2xl border border-white/10 group-hover:border-emerald-500/40 group-hover:bg-white/10 transition-all">
+                    "{orgDetails.vision}"
+                  </p>
+                </div>
+              </div>
             </div>
-            <h3 className="text-2xl font-extrabold tracking-tight">Our Vision</h3>
-            <p className="text-sm text-gray-200 leading-relaxed font-light">
-              "{orgDetails.vision}"
-            </p>
+
+            {/* Our Mission Card */}
+            <div className="group relative bg-gradient-to-br from-amber-950 via-slate-900 to-orange-950 text-white p-8 sm:p-10 rounded-3xl border border-amber-500/20 shadow-xl overflow-hidden transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(245,158,11,0.3)] hover:border-amber-400/60 cursor-pointer">
+              {/* Radial Mouseover Glow & Particle Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-amber-500/15 via-orange-400/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none blur-2xl"></div>
+              <div className="absolute -top-24 -left-24 w-60 h-60 bg-amber-500/20 rounded-full blur-3xl group-hover:bg-amber-400/30 transition-colors duration-700 pointer-events-none"></div>
+
+              {/* Top-Right Decorative Morphing Corner Accent */}
+              <div className="absolute top-0 right-0 w-36 h-36 bg-gradient-to-br from-amber-400/20 to-transparent rounded-bl-full transform translate-x-10 -translate-y-10 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-500 pointer-events-none"></div>
+
+              <div className="relative z-10 space-y-5">
+                <div className="flex items-center justify-between">
+                  {/* Animated Icon Box */}
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-orange-800 to-slate-950 border border-amber-400/30 flex items-center justify-center text-amber-400 shadow-md group-hover:scale-110 group-hover:-rotate-6 group-hover:bg-amber-400 group-hover:text-slate-950 group-hover:shadow-[0_0_25px_rgba(245,158,11,0.8)] transition-all duration-500">
+                    <Target className="w-7 h-7 sm:w-8 sm:h-8" />
+                  </div>
+
+                  <span className="text-[10px] sm:text-xs font-black uppercase tracking-widest bg-amber-500/20 text-amber-300 border border-amber-400/30 px-3 py-1 rounded-full group-hover:bg-amber-400 group-hover:text-slate-950 transition-colors">
+                    Core Purpose
+                  </span>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl sm:text-3xl font-black tracking-tight text-white group-hover:text-amber-300 transition-colors">
+                    Our Mission
+                  </h3>
+                  <p className="text-xs font-semibold text-amber-400/80 mt-1">Empowering Marginalized Communities</p>
+                </div>
+
+                <div className="relative pt-2">
+                  <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-light italic bg-white/5 p-4 rounded-2xl border border-white/10 group-hover:border-amber-500/40 group-hover:bg-white/10 transition-all">
+                    "{orgDetails.mission}"
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
 
-          <div className="bg-gradient-to-br from-orange-500 to-amber-700 text-white p-8 rounded-2xl shadow-md space-y-4">
-            <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-white">
-              <Target size={28} />
+          {/* Guiding Operational Pillars Grid */}
+          <div className="pt-6">
+            <div className="text-center max-w-xl mx-auto mb-6">
+              <span className="text-[10px] font-extrabold uppercase tracking-wider text-rlhp-green bg-rlhp-lightgreen px-3 py-1 rounded-full">
+                Guiding Methodologies
+              </span>
+              <h3 className="text-xl sm:text-2xl font-black text-rlhp-darkgreen mt-2">Core Strategic Pillars</h3>
             </div>
-            <h3 className="text-2xl font-extrabold tracking-tight">Our Mission</h3>
-            <p className="text-sm text-amber-50 leading-relaxed font-light">
-              "{orgDetails.mission}"
-            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {orgDetails.approaches.map((app, idx) => (
+                <div
+                  key={idx}
+                  className="group bg-white p-5 rounded-2xl border border-gray-200 shadow-2xs hover:shadow-lg hover:border-rlhp-green/50 hover:-translate-y-1 transition-all duration-300 cursor-pointer relative overflow-hidden"
+                >
+                  <div className="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-rlhp-green to-amber-500 group-hover:w-2 transition-all"></div>
+                  <div className="pl-3">
+                    <h4 className="font-extrabold text-sm text-gray-900 group-hover:text-rlhp-green transition-colors">
+                      {app.title}
+                    </h4>
+                    <p className="text-xs text-gray-600 mt-1.5 leading-relaxed">
+                      {app.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
