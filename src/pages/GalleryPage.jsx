@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { galleryData, newsArticlesData } from '../data/rlhpData';
 import { Image as ImageIcon, ExternalLink, Newspaper, ZoomIn, Camera } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 export default function GalleryPage({ onSelectMedia }) {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -69,11 +70,11 @@ export default function GalleryPage({ onSelectMedia }) {
             >
               <div className="h-64 overflow-hidden relative bg-gray-100">
                 <img 
-                  src={item.image} 
+                  src={getImageUrl(item.image)} 
                   alt={item.title} 
                   onError={(e) => {
-                    if (item.remoteImage && e.target.src !== item.remoteImage) {
-                      e.target.src = item.remoteImage;
+                    if (item.remoteImage && e.target.src !== getImageUrl(item.remoteImage)) {
+                      e.target.src = getImageUrl(item.remoteImage);
                     }
                   }}
                   className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500" 

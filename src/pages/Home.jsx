@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { focusAreas, newsArticlesData, successStoriesData, fundingPartners, governmentDepartments } from '../data/rlhpData';
 import ImpactCounters from '../components/ImpactCounters';
 import KarnatakaMap from '../components/KarnatakaMap';
+import { getImageUrl } from '../utils/imageUtils';
 import {
   ArrowRight, Heart, Baby, GraduationCap, Users, Activity,
   BookOpen, Handshake, Building2, ShieldAlert, Award, Calendar, ChevronRight, ChevronLeft
@@ -268,7 +269,7 @@ export default function Home({ setCurrentPage, onNavClick, onOpenDonate, onSelec
               <div>
                 <div className="relative h-44 overflow-hidden">
                   <img
-                    src={item.image}
+                    src={getImageUrl(item.image)}
                     alt={item.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />

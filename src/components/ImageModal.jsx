@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { X, Download, Check, FileText, Image as ImageIcon, Video, Play, Pause, ArrowLeft } from 'lucide-react';
 import { downloadFileInBrowser, downloadPDFDocument } from '../utils/fileDownloader';
+import { getImageUrl } from '../utils/imageUtils';
 
 export default function ImageModal({ item, onClose }) {
   const [downloadingDoc, setDownloadingDoc] = useState(false);
@@ -172,7 +173,7 @@ export default function ImageModal({ item, onClose }) {
           ) : item.image ? (
             <div className="bg-slate-950 flex items-center justify-center p-3 max-h-[45vh] overflow-hidden shrink-0">
               <img 
-                src={item.image} 
+                src={getImageUrl(item.image)} 
                 alt={item.title} 
                 className="max-h-[42vh] w-auto max-w-full object-contain mx-auto rounded shadow-md" 
               />

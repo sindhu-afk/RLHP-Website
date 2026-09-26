@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { newsArticlesData, eventsData } from '../data/rlhpData';
 import { Calendar, Search, Filter, ChevronRight, User, FileText, BookOpen, Award, Landmark, Image, Video, Sparkles } from 'lucide-react';
+import { getImageUrl } from '../utils/imageUtils';
 
 export default function NewsArticlesPage({ onSelectNews, setCurrentPage, onNavClick }) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -173,7 +174,7 @@ export default function NewsArticlesPage({ onSelectNews, setCurrentPage, onNavCl
             >
               <div>
                 <div className="relative h-48 overflow-hidden">
-                  <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <img src={getImageUrl(item.image)} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                   <span className="absolute top-3 left-3 bg-rlhp-green text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">
                     {item.category}
                   </span>
