@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { videoGalleryData } from '../data/rlhpData';
 import { Play, Video, Film, Download, FileText, ExternalLink, CheckCircle } from 'lucide-react';
 import { downloadPDFDocument } from '../utils/fileDownloader';
+import ResourcesMediaHub from '../components/ResourcesMediaHub';
+import GlobalSearchBar from '../components/GlobalSearchBar';
 
-export default function VideoGalleryPage({ onSelectMedia }) {
+export default function VideoGalleryPage({ onSelectMedia, setCurrentPage, onNavClick, onSelectNews }) {
   const [activeCategory, setActiveCategory] = useState('All');
   const [downloadingId, setDownloadingId] = useState(null);
   const [downloadSuccess, setDownloadSuccess] = useState('');
@@ -57,6 +59,19 @@ export default function VideoGalleryPage({ onSelectMedia }) {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        {/* Static Resources & Media Hub */}
+        <ResourcesMediaHub activePage="video-gallery" onNavClick={onNavClick} setCurrentPage={setCurrentPage} />
+
+        {/* Global Search */}
+        <div className="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm">
+          <GlobalSearchBar
+            onNavClick={onNavClick}
+            setCurrentPage={setCurrentPage}
+            onSelectNews={onSelectNews}
+            className="w-full sm:w-96"
+          />
+        </div>
+
         {downloadSuccess && (
           <div className="p-3.5 bg-green-100 border border-green-300 text-green-800 rounded-xl text-xs flex items-center space-x-2 animate-in fade-in">
             <CheckCircle size={16} />

@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { galleryData, newsArticlesData } from '../data/rlhpData';
 import { Image as ImageIcon, ExternalLink, Newspaper, ZoomIn, Camera } from 'lucide-react';
 import { getImageUrl } from '../utils/imageUtils';
+import ResourcesMediaHub from '../components/ResourcesMediaHub';
+import GlobalSearchBar from '../components/GlobalSearchBar';
 
-export default function GalleryPage({ onSelectMedia }) {
+export default function GalleryPage({ onSelectMedia, setCurrentPage, onNavClick, onSelectNews }) {
   const [activeCategory, setActiveCategory] = useState('All');
 
   const categories = ['All', 'Child Development', 'Women Empowerment', 'Youth Programmes', 'Health Programmes', 'Community Activities', 'Events'];
@@ -35,6 +37,19 @@ export default function GalleryPage({ onSelectMedia }) {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        {/* Static Resources & Media Hub */}
+        <ResourcesMediaHub activePage="gallery" onNavClick={onNavClick} setCurrentPage={setCurrentPage} />
+
+        {/* Global Search */}
+        <div className="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm">
+          <GlobalSearchBar
+            onNavClick={onNavClick}
+            setCurrentPage={setCurrentPage}
+            onSelectNews={onSelectNews}
+            className="w-full sm:w-96"
+          />
+        </div>
+
         {/* Category Filters */}
         <div className="flex flex-wrap gap-2 justify-center">
           {categories.map((cat) => {
@@ -134,4 +149,3 @@ export default function GalleryPage({ onSelectMedia }) {
     </div>
   );
 }
-

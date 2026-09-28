@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { publicationsData } from '../data/rlhpData';
-import { FileText, Download, Video, BookOpen, Search, CheckCircle, Loader2 } from 'lucide-react';
-import { downloadFileInBrowser, downloadPDFDocument } from '../utils/fileDownloader';
+import { FileText, Download, Video, Search, CheckCircle, Loader2 } from 'lucide-react';
+import { downloadPDFDocument } from '../utils/fileDownloader';
+import ResourcesMediaHub from '../components/ResourcesMediaHub';
+import GlobalSearchBar from '../components/GlobalSearchBar';
 
-export default function PublicationsPage({ onSelectMedia }) {
+export default function PublicationsPage({ onSelectMedia, setCurrentPage, onNavClick }) {
   const [filterType, setFilterType] = useState('All');
   const [downloadingId, setDownloadingId] = useState(null);
   const [downloadSuccess, setDownloadSuccess] = useState('');
@@ -45,25 +47,37 @@ export default function PublicationsPage({ onSelectMedia }) {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        {/* Static Resources & Media Hub */}
+        <ResourcesMediaHub activePage="publications" onNavClick={onNavClick} setCurrentPage={setCurrentPage} />
+
+        {/* Global Search */}
+        <div className="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+          <GlobalSearchBar
+            onNavClick={onNavClick}
+            setCurrentPage={setCurrentPage}
+            className="w-full sm:w-96"
+          />
+
+          {/* Filter Tabs */}
+          <div className="flex flex-wrap gap-2 justify-center">
+            {['All', 'Annual Report', 'Newsletter', 'Book Publication', 'IEP Video'].map((type) => (
+              <button
+                key={type}
+                onClick={() => setFilterType(type)}
+                className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${filterType === type ? 'bg-rlhp-green text-white shadow-sm' : 'bg-white text-gray-700 border border-gray-200 hover:bg-gray-50'}`}
+              >
+                {type === 'All' ? 'All Resources' : type}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {downloadSuccess && (
           <div className="p-3 bg-green-100 border border-green-300 text-green-800 rounded-xl text-xs flex items-center space-x-2 animate-in fade-in">
             <CheckCircle size={16} />
             <span>{downloadSuccess}</span>
           </div>
         )}
-
-        {/* Filter Tabs */}
-        <div className="flex flex-wrap gap-2 justify-center">
-          {['All', 'Annual Report', 'Newsletter', 'Book Publication', 'IEP Video'].map((type) => (
-            <button
-              key={type}
-              onClick={() => setFilterType(type)}
-              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${filterType === type ? 'bg-rlhp-green text-white shadow-sm' : 'bg-white text-gray-700 border border-gray-200 hover:bg-gray-50'}`}
-            >
-              {type === 'All' ? 'All Resources' : type}
-            </button>
-          ))}
-        </div>
 
         {/* Resource Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -113,6 +127,14 @@ export default function PublicationsPage({ onSelectMedia }) {
             </div>
           ))}
         </div>
+
+        {/* Empty state */}
+        {filteredPubs.length === 0 && (
+          <div className="text-center py-12 bg-white rounded-2xl border border-gray-200">
+            <Search size={32} className="text-gray-300 mx-auto mb-3" />
+            <p className="text-sm text-gray-500 font-medium">No publications found for this filter</p>
+          </div>
+        )}
       </div>
     </div>
   );

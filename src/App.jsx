@@ -65,19 +65,19 @@ export default function App() {
       case 'impact':
         return <ImpactPage />;
       case 'awards':
-        return <AwardsPage />;
+        return <AwardsPage setCurrentPage={setCurrentPage} onNavClick={handleNavClick} onSelectNews={(item) => setSelectedMedia(item)} />;
       case 'news':
         return <NewsArticlesPage onSelectNews={(item) => setSelectedMedia(item)} setCurrentPage={setCurrentPage} onNavClick={handleNavClick} />;
       case 'stories':
-        return <SuccessStoriesPage onSelectNews={(item) => setSelectedMedia(item)} />;
+        return <SuccessStoriesPage onSelectNews={(item) => setSelectedMedia(item)} setCurrentPage={setCurrentPage} onNavClick={handleNavClick} />;
       case 'publications':
-        return <PublicationsPage onSelectMedia={(item) => setSelectedMedia(item)} />;
+        return <PublicationsPage onSelectMedia={(item) => setSelectedMedia(item)} onSelectNews={(item) => setSelectedMedia(item)} setCurrentPage={setCurrentPage} onNavClick={handleNavClick} />;
       case 'gallery':
-        return <GalleryPage onSelectMedia={(item) => setSelectedMedia(item)} />;
+        return <GalleryPage onSelectMedia={(item) => setSelectedMedia(item)} setCurrentPage={setCurrentPage} onNavClick={handleNavClick} />;
       case 'video-gallery':
-        return <VideoGalleryPage onSelectMedia={(item) => setSelectedMedia(item)} />;
+        return <VideoGalleryPage onSelectMedia={(item) => setSelectedMedia(item)} setCurrentPage={setCurrentPage} onNavClick={handleNavClick} />;
       case 'financials':
-        return <FinancialReportsPage />;
+        return <FinancialReportsPage setCurrentPage={setCurrentPage} onNavClick={handleNavClick} onSelectNews={(item) => setSelectedMedia(item)} />;
       case 'bank-details':
         return <BankDetailsPage />;
       case 'part-of-us':

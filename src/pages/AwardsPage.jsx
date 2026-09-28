@@ -1,8 +1,10 @@
 import React from 'react';
 import { awardsData } from '../data/rlhpData';
 import { Award, Trophy, Medal, Star } from 'lucide-react';
+import ResourcesMediaHub from '../components/ResourcesMediaHub';
+import GlobalSearchBar from '../components/GlobalSearchBar';
 
-export default function AwardsPage() {
+export default function AwardsPage({ setCurrentPage, onNavClick, onSelectNews }) {
   return (
     <div className="space-y-12 font-sans pb-12">
       <section className="bg-rlhp-darkgreen text-white py-16 px-4 sm:px-8 text-center">
@@ -13,6 +15,21 @@ export default function AwardsPage() {
           </p>
         </div>
       </section>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        {/* Static Resources & Media Hub */}
+        <ResourcesMediaHub activePage="awards" onNavClick={onNavClick} setCurrentPage={setCurrentPage} />
+
+        {/* Global Search */}
+        <div className="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm">
+          <GlobalSearchBar
+            onNavClick={onNavClick}
+            setCurrentPage={setCurrentPage}
+            onSelectNews={onSelectNews}
+            className="w-full sm:w-96"
+          />
+        </div>
+      </div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         <div className="text-center max-w-lg mx-auto">
@@ -46,7 +63,7 @@ export default function AwardsPage() {
                   </p>
                 </div>
                 <div className="sm:col-span-4 h-32 rounded-xl overflow-hidden border border-gray-100">
-                  <img src={award.image} alt={award.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                  <img src={award.image.startsWith('/') ? `${import.meta.env.BASE_URL}${award.image.slice(1)}` : award.image} alt={award.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                 </div>
               </div>
             </div>

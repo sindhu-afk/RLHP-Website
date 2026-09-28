@@ -243,61 +243,7 @@ export default function Home({ setCurrentPage, onNavClick, onOpenDonate, onSelec
         <KarnatakaMap onSelectDistrict={() => { }} />
       </section>
 
-      {/* LATEST NEWS & ARTICLES - Matching reference mockup grid */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between mb-8">
-          <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-rlhp-darkgreen">Latest News & Articles</h2>
-            <p className="text-xs text-gray-500 mt-1">Updates and ground reports from our intervention sites</p>
-          </div>
-          <button
-            onClick={() => handleNav('news')}
-            className="text-xs font-bold text-rlhp-green hover:text-rlhp-orange transition-colors flex items-center space-x-1"
-          >
-            <span>View All News</span>
-            <ChevronRight size={14} />
-          </button>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {newsArticlesData.map((item) => (
-            <div
-              key={item.id}
-              onClick={() => onSelectNews(item)}
-              className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-2xs hover:shadow-md transition-all cursor-pointer group flex flex-col justify-between"
-            >
-              <div>
-                <div className="relative h-44 overflow-hidden">
-                  <img
-                    src={getImageUrl(item.image)}
-                    alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <span className="absolute top-3 left-3 bg-rlhp-green text-white text-[10px] font-bold px-2.5 py-1 rounded-md uppercase">
-                    {item.category}
-                  </span>
-                </div>
-                <div className="p-5 space-y-2">
-                  <div className="flex items-center text-[11px] text-gray-400 space-x-2">
-                    <Calendar size={12} />
-                    <span>{item.date}</span>
-                  </div>
-                  <h3 className="font-bold text-sm text-gray-900 group-hover:text-rlhp-green transition-colors line-clamp-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-xs text-gray-500 line-clamp-3 leading-relaxed">
-                    {item.excerpt}
-                  </p>
-                </div>
-              </div>
-              <div className="p-5 pt-0 text-xs font-semibold text-rlhp-orange flex items-center">
-                <span>Read Story</span>
-                <ChevronRight size={14} className="ml-1 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* FUNDING PARTNERS & GOVERNMENT COLLABORATION */}
       <section className="bg-rlhp-lightgreen/40 py-12 border-y border-rlhp-green/10">

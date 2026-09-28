@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { successStoriesData } from '../data/rlhpData';
-import { ArrowRight, Quote, MapPin } from 'lucide-react';
+import { ArrowRight, MapPin, Search } from 'lucide-react';
+import ResourcesMediaHub from '../components/ResourcesMediaHub';
+import GlobalSearchBar from '../components/GlobalSearchBar';
 
-export default function SuccessStoriesPage({ onSelectNews }) {
+export default function SuccessStoriesPage({ onSelectNews, setCurrentPage, onNavClick }) {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [programmeFilter, setProgrammeFilter] = useState('All');
+
+  // Get unique programme names for filter tabs
+  const programmes = ['All', ...new Set(successStoriesData.map(s => s.programme).filter(Boolean))];
+
+  const filteredStories = successStoriesData.filter(story => {
+    const matchesSearch = !searchTerm.trim() ||
+      story.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      story.summary?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      story.location?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      story.author?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      story.programme?.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesProgramme = programmeFilter === 'All' || story.programme === programmeFilter;
+    return matchesSearch && matchesProgramme;
+  });
+
   return (
     <div className="space-y-12 font-sans pb-12">
       <section className="bg-rlhp-darkgreen text-white py-16 px-4 sm:px-8 text-center">
@@ -15,8 +34,35 @@ export default function SuccessStoriesPage({ onSelectNews }) {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        {/* Static Resources & Media Hub */}
+        <ResourcesMediaHub activePage="stories" onNavClick={onNavClick} setCurrentPage={setCurrentPage} />
+
+        {/* Search & Filter Bar */}
+        <div className="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+          <GlobalSearchBar
+            onNavClick={onNavClick}
+            setCurrentPage={setCurrentPage}
+            onSelectNews={onSelectNews}
+            className="w-full sm:w-96"
+          />
+
+          <div className="flex items-center space-x-2 w-full sm:w-auto overflow-x-auto">
+            <span className="text-xs text-gray-500 font-semibold shrink-0">Programme:</span>
+            {programmes.map((prog) => (
+              <button
+                key={prog}
+                onClick={() => setProgrammeFilter(prog)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors shrink-0 whitespace-nowrap ${programmeFilter === prog ? 'bg-rlhp-green text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+              >
+                {prog}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Stories Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {successStoriesData.map((story) => (
+          {filteredStories.map((story) => (
             <div 
               key={story.id} 
               className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-2xs hover:shadow-lg transition-all flex flex-col justify-between group"
@@ -72,6 +118,15 @@ export default function SuccessStoriesPage({ onSelectNews }) {
             </div>
           ))}
         </div>
+
+        {/* Empty state */}
+        {filteredStories.length === 0 && (
+          <div className="text-center py-12 bg-white rounded-2xl border border-gray-200">
+            <Search size={32} className="text-gray-300 mx-auto mb-3" />
+            <p className="text-sm text-gray-500 font-medium">No stories found matching your search</p>
+            <p className="text-xs text-gray-400 mt-1">Try adjusting your search or filter criteria</p>
+          </div>
+        )}
       </div>
     </div>
   );

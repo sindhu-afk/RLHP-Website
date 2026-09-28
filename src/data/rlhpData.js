@@ -413,7 +413,7 @@ export const awardsData = [
     title: "Rajarshi Shree Nalwadi Krishnaraja Odeyar Award",
     conferredBy: "Government & Cultural Bodies of Karnataka",
     description: "Awarded for exceptional 42+ year legacy in uplifting rural marginalized communities and promoting holistic child education.",
-    image: "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=800&auto=format&fit=crop"
+    image: "/images/about/nalwadi_award.jpg"
   },
   {
     id: 2,
@@ -421,7 +421,7 @@ export const awardsData = [
     title: "Chaitanya Shri Award",
     conferredBy: "State Social Welfare Federation",
     description: "Recognizing RLHP's pioneering work in forming DWANI and BELAKU Women Federations empowering over 12,000 rural women.",
-    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=800&auto=format&fit=crop"
+    image: "/images/about/chaitanya_shri_award.jpg"
   },
   {
     id: 3,
@@ -429,7 +429,7 @@ export const awardsData = [
     title: "World Day Against Child Labour 2023 Recognition",
     conferredBy: "Department of Labour & Child Protection Board",
     description: "Honored for active rescue, rehabilitation, and education of over 8,000+ child laborers across Karnataka.",
-    image: "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?q=80&w=800&auto=format&fit=crop"
+    image: "/images/about/child_labour_award.jpg"
   },
   {
     id: 4,
@@ -437,7 +437,7 @@ export const awardsData = [
     title: "Best Service Organization Award",
     conferredBy: "Mysuru District Administration",
     description: "Recognizing outstanding humanitarian relief during the COVID-19 pandemic and Kerala flood emergency operations.",
-    image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=800&auto=format&fit=crop"
+    image: "/images/about/best_service_award.jpg"
   }
 ];
 

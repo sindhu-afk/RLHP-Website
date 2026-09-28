@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { orgDetails, publicationsData } from '../data/rlhpData';
 import { FileText, Download, ShieldCheck, CheckCircle2, Building, Award, Loader2 } from 'lucide-react';
 import { downloadFileInBrowser, downloadPDFDocument } from '../utils/fileDownloader';
+import ResourcesMediaHub from '../components/ResourcesMediaHub';
+import GlobalSearchBar from '../components/GlobalSearchBar';
 
-export default function FinancialReportsPage() {
+export default function FinancialReportsPage({ setCurrentPage, onNavClick, onSelectNews }) {
   const [downloadingId, setDownloadingId] = useState(null);
   const [downloadMsg, setDownloadMsg] = useState('');
 
@@ -41,7 +43,20 @@ export default function FinancialReportsPage() {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        {/* Static Resources & Media Hub */}
+        <ResourcesMediaHub activePage="financials" onNavClick={onNavClick} setCurrentPage={setCurrentPage} />
+
+        {/* Global Search */}
+        <div className="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm">
+          <GlobalSearchBar
+            onNavClick={onNavClick}
+            setCurrentPage={setCurrentPage}
+            onSelectNews={onSelectNews}
+            className="w-full sm:w-96"
+          />
+        </div>
+
         {downloadMsg && (
           <div className="p-3.5 bg-green-100 border border-green-300 text-green-800 rounded-xl text-xs flex items-center space-x-2 animate-in fade-in">
             <CheckCircle2 size={16} />
