@@ -5,7 +5,8 @@ import {
   MapPin, Lock, Info, BookOpen, Award, FileText, 
   Image as ImageIcon, Landmark, ShieldCheck, Baby,
   GraduationCap, Users, Activity, Building2, ShieldAlert,
-  ArrowRight, Sparkles, CheckCircle2, Video
+  ArrowRight, Sparkles, CheckCircle2, Video,
+  Youtube, Facebook, Instagram
 } from 'lucide-react';
 
 export default function Navbar({ currentPage, setCurrentPage, onNavClick }) {
@@ -109,6 +110,39 @@ export default function Navbar({ currentPage, setCurrentPage, onNavClick }) {
               <ShieldCheck size={isScrolled ? 11 : 12} className="text-rlhp-accentgreen" />
               <span>FCRA & 80G Tax Certified NGO</span>
             </span>
+
+            <div className="hidden sm:flex items-center space-x-2 pl-2 border-l border-white/15">
+              <a 
+                href={orgDetails.social.youtube} 
+                target="_blank" 
+                rel="noreferrer" 
+                title="RLHP Official YouTube Channel"
+                aria-label="RLHP YouTube Channel"
+                className="w-5 h-5 rounded flex items-center justify-center text-red-400 hover:text-white hover:bg-red-600 transition-colors"
+              >
+                <Youtube size={isScrolled ? 12 : 13} />
+              </a>
+              <a 
+                href={orgDetails.social.facebook} 
+                target="_blank" 
+                rel="noreferrer" 
+                title="RLHP Facebook"
+                aria-label="RLHP Facebook"
+                className="w-5 h-5 rounded flex items-center justify-center text-blue-300 hover:text-white hover:bg-blue-600 transition-colors"
+              >
+                <Facebook size={isScrolled ? 11 : 12} />
+              </a>
+              <a 
+                href={orgDetails.social.instagram} 
+                target="_blank" 
+                rel="noreferrer" 
+                title="RLHP Instagram"
+                aria-label="RLHP Instagram"
+                className="w-5 h-5 rounded flex items-center justify-center text-pink-300 hover:text-white hover:bg-pink-600 transition-colors"
+              >
+                <Instagram size={isScrolled ? 11 : 12} />
+              </a>
+            </div>
           </div>
         </div>
       </div>

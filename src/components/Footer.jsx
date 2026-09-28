@@ -32,16 +32,16 @@ export default function Footer({ setCurrentPage, onOpenDonate, onNavClick }) {
             Working for over 42 years for the empowerment of children, women and communities for a just, equitable and sustainable society.
           </p>
           <div className="pt-2 flex items-center space-x-3">
-            <a href={orgDetails.social.facebook} target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-white/10 hover:bg-rlhp-orange text-white flex items-center justify-center transition-colors">
+            <a href={orgDetails.social.facebook} target="_blank" rel="noreferrer" title="RLHP Facebook" aria-label="RLHP Facebook" className="w-8 h-8 rounded-full bg-white/10 hover:bg-rlhp-orange text-white flex items-center justify-center transition-colors">
               <Facebook size={16} />
             </a>
-            <a href={orgDetails.social.twitter} target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-white/10 hover:bg-rlhp-orange text-white flex items-center justify-center transition-colors">
+            <a href={orgDetails.social.twitter} target="_blank" rel="noreferrer" title="RLHP Twitter / X" aria-label="RLHP Twitter / X" className="w-8 h-8 rounded-full bg-white/10 hover:bg-rlhp-orange text-white flex items-center justify-center transition-colors">
               <Twitter size={16} />
             </a>
-            <a href={orgDetails.social.instagram} target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-white/10 hover:bg-rlhp-orange text-white flex items-center justify-center transition-colors">
+            <a href={orgDetails.social.instagram} target="_blank" rel="noreferrer" title="RLHP Instagram" aria-label="RLHP Instagram" className="w-8 h-8 rounded-full bg-white/10 hover:bg-rlhp-orange text-white flex items-center justify-center transition-colors">
               <Instagram size={16} />
             </a>
-            <a href={orgDetails.social.youtube} target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-white/10 hover:bg-rlhp-orange text-white flex items-center justify-center transition-colors">
+            <a href={orgDetails.social.youtube} target="_blank" rel="noreferrer" title="RLHP Official YouTube Channel" aria-label="RLHP Official YouTube Channel" className="w-8 h-8 rounded-full bg-white/10 hover:bg-red-600 text-white flex items-center justify-center transition-colors">
               <Youtube size={16} />
             </a>
           </div>

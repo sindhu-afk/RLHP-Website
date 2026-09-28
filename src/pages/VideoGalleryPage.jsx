@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { videoGalleryData } from '../data/rlhpData';
-import { Play, Video, Film, Download, FileText, ExternalLink, CheckCircle } from 'lucide-react';
+import { videoGalleryData, orgDetails } from '../data/rlhpData';
+import { Play, Video, Film, Download, FileText, ExternalLink, CheckCircle, Youtube } from 'lucide-react';
 import { downloadPDFDocument } from '../utils/fileDownloader';
 import ResourcesMediaHub from '../components/ResourcesMediaHub';
 import GlobalSearchBar from '../components/GlobalSearchBar';
@@ -55,6 +55,18 @@ export default function VideoGalleryPage({ onSelectMedia, setCurrentPage, onNavC
           <p className="text-xs sm:text-sm text-rlhp-lightgreen max-w-2xl mx-auto font-medium leading-relaxed">
             Watch ground-level video documentations capturing 42+ years of child protection, AshaKirana shelters, women sanghas, health camps, and community empowerment in Mysuru & Karnataka.
           </p>
+          <div className="pt-2">
+            <a
+              href={orgDetails.social.youtube}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow-md transition-all cursor-pointer hover:scale-105"
+            >
+              <Youtube size={16} />
+              <span>Visit RLHP Official YouTube Channel</span>
+              <ExternalLink size={13} />
+            </a>
+          </div>
         </div>
       </section>
 

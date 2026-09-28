@@ -16,7 +16,7 @@ export const orgDetails = {
     facebook: "https://facebook.com/rlhpmysore",
     twitter: "https://twitter.com/rlhpmysore",
     instagram: "https://instagram.com/rlhpmysore",
-    youtube: "https://youtube.com/rlhpmysore"
+    youtube: "https://www.youtube.com/channel/UCwlQCuupud6ldOTS57PaYaA"
   },
   statutory: {
     registrationNo: "36/83-84 (Registered on 24th May 1984 under Karnataka Societies Registration Act 1960 and FCRA)",
