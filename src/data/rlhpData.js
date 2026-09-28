@@ -13,7 +13,7 @@ export const orgDetails = {
   emails: ["mysore@rlhp.org", "rlhp@rlhp.org"],
   website: "www.rlhpmysore.com",
   social: {
-    facebook: "https://facebook.com/rlhpmysore",
+    facebook: "https://www.facebook.com/rlhpmysore.rlhp/",
     twitter: "https://twitter.com/rlhpmysore",
     instagram: "https://instagram.com/rlhpmysore",
     youtube: "https://www.youtube.com/channel/UCwlQCuupud6ldOTS57PaYaA"
