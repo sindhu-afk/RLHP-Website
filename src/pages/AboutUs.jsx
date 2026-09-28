@@ -249,9 +249,12 @@ export default function AboutUs({ setCurrentPage }) {
           {/* Executive Office Bearers */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {/* President */}
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center space-y-4 hover:border-rlhp-green transition-all group flex flex-col items-center">
+            <div className="bg-white p-6 rounded-2xl border-2 border-rlhp-orange shadow-md text-center space-y-4 relative group flex flex-col items-center hover:shadow-lg transition-all">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-rlhp-orange text-white text-[10px] font-extrabold px-3 py-0.5 rounded-full shadow-xs uppercase tracking-wider">
+                President
+              </span>
               <div 
-                className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-rlhp-green mx-auto shadow-md group-hover:scale-105 transition-all relative cursor-pointer bg-gray-100 p-1 flex items-center justify-center"
+                className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-rlhp-orange mx-auto shadow-md group-hover:scale-105 transition-all mt-1 relative cursor-pointer bg-gray-100 p-1 flex items-center justify-center"
                 onClick={() => setSelectedPhoto({
                   src: `${import.meta.env.BASE_URL}images/team/gita_mithra.jpg?v=20260928_v3`,
                   name: "Mrs. Gita Mitra",
@@ -269,16 +272,13 @@ export default function AboutUs({ setCurrentPage }) {
                 </div>
               </div>
               <div>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-rlhp-orange bg-orange-50 px-2.5 py-0.5 rounded-full">
-                  President
-                </span>
-                <h3 className="text-lg font-extrabold text-gray-900 mt-1.5">Mrs. Gita Mitra</h3>
-                <p className="text-xs text-gray-500 font-medium mt-0.5">President, RLHP Board</p>
+                <h3 className="text-lg font-extrabold text-gray-900 mt-1">Mrs. Gita Mitra</h3>
+                <p className="text-xs text-rlhp-orange font-bold mt-0.5">President, RLHP Board</p>
               </div>
             </div>
 
             {/* Secretary */}
-            <div className="bg-white p-6 rounded-2xl border-2 border-rlhp-green shadow-md text-center space-y-4 relative group flex flex-col items-center">
+            <div className="bg-white p-6 rounded-2xl border-2 border-rlhp-green shadow-md text-center space-y-4 relative group flex flex-col items-center hover:shadow-lg transition-all">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-rlhp-green text-white text-[10px] font-extrabold px-3 py-0.5 rounded-full shadow-xs uppercase tracking-wider">
                 Secretary
               </span>
@@ -308,9 +308,12 @@ export default function AboutUs({ setCurrentPage }) {
             </div>
 
             {/* Treasurer */}
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center space-y-4 hover:border-rlhp-green transition-all group flex flex-col items-center">
+            <div className="bg-white p-6 rounded-2xl border-2 border-blue-600 shadow-md text-center space-y-4 relative group flex flex-col items-center hover:shadow-lg transition-all">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[10px] font-extrabold px-3 py-0.5 rounded-full shadow-xs uppercase tracking-wider">
+                Treasurer
+              </span>
               <div 
-                className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-rlhp-green mx-auto shadow-md group-hover:scale-105 transition-all relative cursor-pointer bg-gray-100 p-1 flex items-center justify-center"
+                className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-blue-600 mx-auto shadow-md group-hover:scale-105 transition-all mt-1 relative cursor-pointer bg-gray-100 p-1 flex items-center justify-center"
                 onClick={() => setSelectedPhoto({
                   src: `${import.meta.env.BASE_URL}images/team/santhosh_kumar.jpg?v=20260928_v3`,
                   name: "Mr. Santhosh Kumar",
@@ -328,11 +331,8 @@ export default function AboutUs({ setCurrentPage }) {
                 </div>
               </div>
               <div>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full">
-                  Treasurer
-                </span>
-                <h3 className="text-lg font-extrabold text-gray-900 mt-1.5">Mr. Santhosh Kumar</h3>
-                <p className="text-xs text-gray-500 font-medium mt-0.5">Treasurer, Financial Oversight</p>
+                <h3 className="text-lg font-extrabold text-gray-900 mt-1">Mr. Santhosh Kumar</h3>
+                <p className="text-xs text-blue-600 font-bold mt-0.5">Treasurer, Financial Oversight</p>
               </div>
             </div>
           </div>
