@@ -192,14 +192,14 @@ export default function AboutUs({ setCurrentPage }) {
                 <div 
                   className="w-32 sm:w-36 h-40 sm:h-48 rounded-2xl overflow-hidden border-2 border-rlhp-orange shrink-0 bg-slate-900/60 p-1 shadow-lg group-hover:scale-105 transition-all relative cursor-pointer flex items-center justify-center"
                   onClick={() => setSelectedPhoto({
-                    src: `${import.meta.env.BASE_URL}images/team/joy_maliekal.jpg?v=20260928`,
+                    src: `${import.meta.env.BASE_URL}images/team/joy_maliekal.jpg?v=20260928_v2`,
                     name: "Mr. Joy Maliekal",
                     title: "Founder, RLHP"
                   })}
                   title="Click to zoom photo"
                 >
                   <img 
-                    src={`${import.meta.env.BASE_URL}images/team/joy_maliekal.jpg?v=20260928`} 
+                    src={`${import.meta.env.BASE_URL}images/team/joy_maliekal.jpg?v=20260928_v2`} 
                     alt="Mr. Joy Maliekal - Founder, RLHP" 
                     className="w-full h-full object-contain rounded-xl filter contrast-[1.04] brightness-[1.02]"
                   />
@@ -220,14 +220,14 @@ export default function AboutUs({ setCurrentPage }) {
                 <div 
                   className="w-32 sm:w-36 h-40 sm:h-48 rounded-2xl overflow-hidden border-2 border-rlhp-orange shrink-0 bg-slate-900/60 p-1 shadow-lg group-hover:scale-105 transition-all relative cursor-pointer flex items-center justify-center"
                   onClick={() => setSelectedPhoto({
-                    src: `${import.meta.env.BASE_URL}images/team/philomena_joy.jpg?v=20260928`,
+                    src: `${import.meta.env.BASE_URL}images/team/philomena_joy.jpg?v=20260928_v2`,
                     name: "Mrs. Philomena Joy",
                     title: "Founder, RLHP"
                   })}
                   title="Click to zoom photo"
                 >
                   <img 
-                    src={`${import.meta.env.BASE_URL}images/team/philomena_joy.jpg?v=20260928`} 
+                    src={`${import.meta.env.BASE_URL}images/team/philomena_joy.jpg?v=20260928_v2`} 
                     alt="Mrs. Philomena Joy - Founder, RLHP" 
                     className="w-full h-full object-contain rounded-xl filter contrast-[1.04] brightness-[1.02]"
                   />
@@ -253,14 +253,14 @@ export default function AboutUs({ setCurrentPage }) {
               <div 
                 className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-rlhp-green mx-auto shadow-md group-hover:scale-105 transition-all relative cursor-pointer bg-gray-100 p-1 flex items-center justify-center"
                 onClick={() => setSelectedPhoto({
-                  src: `${import.meta.env.BASE_URL}images/team/gita_mithra.jpg?v=20260928`,
+                  src: `${import.meta.env.BASE_URL}images/team/gita_mithra.jpg?v=20260928_v2`,
                   name: "Mrs. Gita Mitra",
                   title: "President, RLHP Board"
                 })}
                 title="Click to zoom photo"
               >
                 <img 
-                  src={`${import.meta.env.BASE_URL}images/team/gita_mithra.jpg?v=20260928`} 
+                  src={`${import.meta.env.BASE_URL}images/team/gita_mithra.jpg?v=20260928_v2`} 
                   alt="Mrs. Gita Mitra - President, RLHP" 
                   className="w-full h-full object-contain rounded-xl filter contrast-[1.04] brightness-[1.02]"
                 />
@@ -285,14 +285,14 @@ export default function AboutUs({ setCurrentPage }) {
               <div 
                 className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-rlhp-green mx-auto shadow-md group-hover:scale-105 transition-all mt-1 relative cursor-pointer bg-gray-100 p-1 flex items-center justify-center"
                 onClick={() => setSelectedPhoto({
-                  src: `${import.meta.env.BASE_URL}images/team/jose_vk.jpg?v=20260928`,
+                  src: `${import.meta.env.BASE_URL}images/team/jose_vk.jpg?v=20260928_v2`,
                   name: "Mr. Jose V.K.",
                   title: "Secretary & Director, RLHP"
                 })}
                 title="Click to zoom photo"
               >
                 <img 
-                  src={`${import.meta.env.BASE_URL}images/team/jose_vk.jpg?v=20260928`} 
+                  src={`${import.meta.env.BASE_URL}images/team/jose_vk.jpg?v=20260928_v2`} 
                   alt="Mr. Jose V.K. - Secretary & Director, RLHP" 
                   className="w-full h-full object-contain rounded-xl filter contrast-[1.04] brightness-[1.02]"
                 />
@@ -312,14 +312,14 @@ export default function AboutUs({ setCurrentPage }) {
               <div 
                 className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-rlhp-green mx-auto shadow-md group-hover:scale-105 transition-all relative cursor-pointer bg-gray-100 p-1 flex items-center justify-center"
                 onClick={() => setSelectedPhoto({
-                  src: `${import.meta.env.BASE_URL}images/team/santhosh_kumar.jpg?v=20260928`,
+                  src: `${import.meta.env.BASE_URL}images/team/santhosh_kumar.jpg?v=20260928_v2`,
                   name: "Mr. Santhosh Kumar",
                   title: "Treasurer, Financial Oversight"
                 })}
                 title="Click to zoom photo"
               >
                 <img 
-                  src={`${import.meta.env.BASE_URL}images/team/santhosh_kumar.jpg?v=20260928`} 
+                  src={`${import.meta.env.BASE_URL}images/team/santhosh_kumar.jpg?v=20260928_v2`} 
                   alt="Mr. Santhosh Kumar - Treasurer, RLHP" 
                   className="w-full h-full object-contain rounded-xl filter contrast-[1.04] brightness-[1.02]"
                 />
@@ -358,14 +358,14 @@ export default function AboutUs({ setCurrentPage }) {
                       <div 
                         className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-rlhp-green/40 group-hover:border-rlhp-green shrink-0 shadow-md bg-gray-100 p-1 group-hover:scale-105 transition-all duration-300 relative cursor-pointer flex items-center justify-center"
                         onClick={() => setSelectedPhoto({
-                          src: member.image.startsWith('/') ? `${import.meta.env.BASE_URL}${member.image.slice(1)}?v=20260928` : `${member.image}?v=20260928`,
+                          src: member.image.startsWith('/') ? `${import.meta.env.BASE_URL}${member.image.slice(1)}?v=20260928_v2` : `${member.image}?v=20260928_v2`,
                           name: member.name,
                           title: `${member.designation}, RLHP Board`
                         })}
                         title="Click to view full photo in HD"
                       >
                         <img 
-                          src={member.image.startsWith('/') ? `${import.meta.env.BASE_URL}${member.image.slice(1)}?v=20260928` : `${member.image}?v=20260928`} 
+                          src={member.image.startsWith('/') ? `${import.meta.env.BASE_URL}${member.image.slice(1)}?v=20260928_v2` : `${member.image}?v=20260928_v2`} 
                           alt={`${member.name} - ${member.designation}`}
                           className="w-full h-full object-contain rounded-xl filter contrast-[1.04] brightness-[1.02]"
                         />
