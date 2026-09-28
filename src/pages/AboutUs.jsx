@@ -277,23 +277,23 @@ export default function AboutUs({ setCurrentPage }) {
               </div>
             </div>
 
-            {/* Secretary / Director */}
+            {/* Secretary */}
             <div className="bg-white p-6 rounded-2xl border-2 border-rlhp-green shadow-md text-center space-y-4 relative group flex flex-col items-center">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-rlhp-green text-white text-[10px] font-extrabold px-3 py-0.5 rounded-full shadow-xs uppercase tracking-wider">
-                Secretary & Director
+                Secretary
               </span>
               <div 
                 className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-rlhp-green mx-auto shadow-md group-hover:scale-105 transition-all mt-1 relative cursor-pointer bg-gray-100 p-1 flex items-center justify-center"
                 onClick={() => setSelectedPhoto({
                   src: `${import.meta.env.BASE_URL}images/team/jose_vk.jpg?v=20260928_v3`,
                   name: "Mr. Jose V.K.",
-                  title: "Secretary & Director, RLHP"
+                  title: "Secretary, RLHP"
                 })}
                 title="Click to zoom photo"
               >
                 <img 
                   src={`${import.meta.env.BASE_URL}images/team/jose_vk.jpg?v=20260928_v3`} 
-                  alt="Mr. Jose V.K. - Secretary & Director, RLHP" 
+                  alt="Mr. Jose V.K. - Secretary, RLHP" 
                   className="w-full h-full object-contain rounded-xl filter contrast-[1.04] brightness-[1.02]"
                 />
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-xl">
@@ -302,7 +302,7 @@ export default function AboutUs({ setCurrentPage }) {
               </div>
               <div>
                 <h3 className="text-lg font-extrabold text-rlhp-darkgreen mt-1">Mr. Jose V.K.</h3>
-                <p className="text-xs text-rlhp-green font-bold mt-0.5">Secretary & Director</p>
+                <p className="text-xs text-rlhp-green font-bold mt-0.5">Secretary</p>
                 <p className="text-[11px] text-gray-600 mt-1 leading-snug">Leading RLHP's 42+ year legacy in child development, women sanghas & rural health.</p>
               </div>
             </div>
@@ -351,7 +351,7 @@ export default function AboutUs({ setCurrentPage }) {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {orgDetails.boardMembers
-                .filter(member => !['President', 'Secretary & Director', 'Treasurer'].includes(member.designation))
+                .filter(member => !['President', 'Secretary', 'Treasurer'].includes(member.designation))
                 .map((member, idx) => (
                   <div key={idx} className="bg-white p-6 rounded-2xl border border-gray-200 shadow-xs hover:shadow-md hover:border-rlhp-green transition-all duration-300 text-center space-y-4 group flex flex-col items-center">
                     {member.image ? (

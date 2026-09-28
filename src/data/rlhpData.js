@@ -53,7 +53,7 @@ export const orgDetails = {
   ],
   boardMembers: [
     { name: "Mrs. Gita Mitra", designation: "President", role: "President", image: "/images/team/gita_mithra.jpg" },
-    { name: "Mr. Jose V.K.", designation: "Secretary & Director", role: "Secretary / Director", image: "/images/team/jose_vk.jpg" },
+    { name: "Mr. Jose V.K.", designation: "Secretary", role: "Secretary", image: "/images/team/jose_vk.jpg" },
     { name: "Mr. Santhosh Kumar", designation: "Treasurer", role: "Treasurer", image: "/images/team/santhosh_kumar.jpg" },
     { name: "Mr. Prasanna N", designation: "Board Member", role: "Board Member", image: "/images/team/prasanna_n.jpg" },
     { name: "Ms. Elizabeth John", designation: "Board Member", role: "Board Member", image: "/images/team/elizabeth_john.jpg" },
