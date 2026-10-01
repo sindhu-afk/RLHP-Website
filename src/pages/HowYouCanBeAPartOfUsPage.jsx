@@ -296,12 +296,12 @@ export default function HowYouCanBeAPartOfUsPage({ setCurrentPage }) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {fundingPartners.map((partner, idx) => (
               <div key={idx} className="p-4 bg-gray-50 rounded-xl border border-gray-200 flex flex-col justify-between space-y-3 hover:border-rlhp-green hover:bg-white transition-all shadow-2xs group">
-                <div className="h-14 flex items-center justify-center bg-white p-2 rounded-lg border border-gray-100 shadow-2xs w-full">
+                <div className="h-16 flex items-center justify-center bg-white p-2 rounded-lg border border-gray-100 shadow-2xs w-full">
                   {partner.logoImage ? (
                     <img 
                       src={`${import.meta.env.BASE_URL}${partner.logoImage.replace(/^\//, '')}`} 
                       alt={`${partner.name} Logo`}
-                      className="max-h-12 max-w-full object-contain filter group-hover:brightness-105 transition-all"
+                      className="h-12 w-auto max-w-full object-contain filter group-hover:scale-105 transition-all duration-300"
                     />
                   ) : (
                     <span className="text-xs font-extrabold text-rlhp-darkgreen uppercase tracking-wider">{partner.logoText}</span>

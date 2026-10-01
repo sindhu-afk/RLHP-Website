@@ -256,13 +256,13 @@ export default function Home({ setCurrentPage, onNavClick, onOpenDonate, onSelec
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-4">
               {fundingPartners.map((partner, idx) => (
-                <div key={idx} className="bg-white p-4 rounded-xl border border-gray-200 shadow-xs text-center flex flex-col items-center justify-between min-h-[120px] hover:border-rlhp-green hover:shadow-md transition-all group">
-                  <div className="h-14 flex items-center justify-center w-full px-2">
+                <div key={idx} className="bg-white p-4 rounded-xl border border-gray-200 shadow-xs text-center flex flex-col items-center justify-between min-h-[130px] hover:border-rlhp-green hover:shadow-md transition-all group">
+                  <div className="h-16 flex items-center justify-center w-full px-2">
                     {partner.logoImage ? (
                       <img 
                         src={`${import.meta.env.BASE_URL}${partner.logoImage.replace(/^\//, '')}`} 
                         alt={`${partner.name} Logo`}
-                        className="max-h-12 max-w-full object-contain filter group-hover:brightness-105 transition-all"
+                        className="h-12 w-auto max-w-full object-contain filter group-hover:scale-105 transition-all duration-300"
                       />
                     ) : (
                       <span className="font-extrabold text-xs text-gray-900 group-hover:text-rlhp-darkgreen">{partner.logoText}</span>

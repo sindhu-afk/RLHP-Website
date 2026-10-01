@@ -1569,13 +1569,13 @@ export const galleryData = [
 
 export const fundingPartners = [
   { name: "Azim Premji Philanthropic Initiatives (APPI)", logoText: "APPI", logoImage: "/images/partners/azim-premji-logo.png", project: "Early childhood development & rights" },
-  { name: "Wipro Foundation", logoText: "Wipro Foundation", logoImage: "/images/partners/wipro-foundation-logo.jpg", project: "Community development through Health & Sanitation" },
+  { name: "Wipro Foundation", logoText: "Wipro Foundation", logoImage: "/images/partners/wipro-foundation-logo.png", project: "Community development through Health & Sanitation" },
   { name: "ChildFund International", logoText: "ChildFund International", logoImage: "/images/partners/childfund-logo.png", project: "Child protection & youth sponsorship" },
-  { name: "Mission Inde", logoText: "Mission Inde", logoImage: "/images/partners/mission-inde-logo.jpg", project: "Rural literacy & education initiatives" },
+  { name: "Mission Inde", logoText: "Mission Inde", logoImage: "/images/partners/mission-inde-logo.png", project: "Rural literacy & education initiatives" },
   { name: "Klüber Lubrication Pvt. Ltd.", logoText: "Klüber Lubrication", logoImage: "/images/partners/kluber-lubrication-logo.png", project: "Education support for underprivileged children" },
-  { name: "Magneti Marelli", logoText: "Magneti Marelli", logoImage: null, project: "Empowering backward districts to access public schemes" },
-  { name: "AMADEUS", logoText: "AMADEUS", logoImage: null, project: "Child focused integrated development" },
-  { name: "Terre des Hommes (TdH - Germany)", logoText: "TdH (G)", logoImage: null, project: "Child rights & protection network" }
+  { name: "Magneti Marelli", logoText: "Magneti Marelli", logoImage: "/images/partners/magneti-marelli-logo.png", project: "Empowering backward districts to access public schemes" },
+  { name: "AMADEUS", logoText: "AMADEUS", logoImage: "/images/partners/amadeus-logo.png", project: "Child focused integrated development" },
+  { name: "Terre des Hommes (TdH - Germany)", logoText: "TdH (G)", logoImage: "/images/partners/tdh-germany-logo.png", project: "Child rights & protection network" }
 ];
 
 export const governmentDepartments = [
