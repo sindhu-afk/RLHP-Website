@@ -1,7 +1,7 @@
 import React from 'react';
 import { orgDetails } from '../data/rlhpData';
 import RlhpLogo from './RlhpLogo';
-import { Mail, Phone, MapPin, Globe, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 
 export default function Footer({ setCurrentPage, onOpenDonate, onNavClick }) {
   const handleNavClick = (pageId, optionId = null) => {
@@ -99,10 +99,6 @@ export default function Footer({ setCurrentPage, onOpenDonate, onNavClick }) {
             <li className="flex items-center space-x-2.5">
               <Mail size={14} className="text-rlhp-orange shrink-0" />
               <span>{orgDetails.emails[0]}</span>
-            </li>
-            <li className="flex items-center space-x-2.5">
-              <Globe size={14} className="text-rlhp-orange shrink-0" />
-              <span>{orgDetails.website}</span>
             </li>
           </ul>
           <div className="mt-5">

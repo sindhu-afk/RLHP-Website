@@ -45,9 +45,9 @@ export default function AboutUs({ setCurrentPage }) {
 
           <div className="lg:col-span-5">
             <div className="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white">
-              <img 
-                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800&auto=format&fit=crop" 
-                alt="RLHP Happy children smiling" 
+              <img
+                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800&auto=format&fit=crop"
+                alt="RLHP Happy children smiling"
                 className="w-full h-80 object-cover"
               />
               <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 p-4 text-white">
@@ -60,7 +60,7 @@ export default function AboutUs({ setCurrentPage }) {
         {/* Vision, Mission & Core Values with Rich Interactive Mouse-Over Animations */}
         <section id="vision-mission" className="space-y-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            
+
             {/* Our Vision Card */}
             <div className="group relative bg-gradient-to-br from-emerald-950 via-slate-900 to-emerald-900 text-white p-8 sm:p-10 rounded-3xl border border-emerald-500/20 shadow-xl overflow-hidden transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(16,185,129,0.3)] hover:border-emerald-400/60 cursor-pointer">
               {/* Radial Mouseover Glow & Particle Effect */}
@@ -189,7 +189,7 @@ export default function AboutUs({ setCurrentPage }) {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 border-t border-white/10">
               <div className="bg-white/10 p-5 rounded-2xl flex items-center space-x-4 hover:bg-white/15 transition-all group">
-                <div 
+                <div
                   className="w-32 sm:w-36 h-40 sm:h-48 rounded-2xl overflow-hidden border-2 border-rlhp-orange shrink-0 bg-slate-900/60 p-1 shadow-lg group-hover:scale-105 transition-all relative cursor-pointer flex items-center justify-center"
                   onClick={() => setSelectedPhoto({
                     src: `${import.meta.env.BASE_URL}images/team/joy_maliekal.jpg?v=20260928_v3`,
@@ -198,9 +198,9 @@ export default function AboutUs({ setCurrentPage }) {
                   })}
                   title="Click to zoom photo"
                 >
-                  <img 
-                    src={`${import.meta.env.BASE_URL}images/team/joy_maliekal.jpg?v=20260928_v3`} 
-                    alt="Mr. Joy Maliekal - Founder, RLHP" 
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/team/joy_maliekal.jpg?v=20260928_v3`}
+                    alt="Mr. Joy Maliekal - Founder, RLHP"
                     className="w-full h-full object-contain rounded-xl filter contrast-[1.04] brightness-[1.02]"
                   />
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-xl">
@@ -217,7 +217,7 @@ export default function AboutUs({ setCurrentPage }) {
               </div>
 
               <div className="bg-white/10 p-5 rounded-2xl flex items-center space-x-4 hover:bg-white/15 transition-all group">
-                <div 
+                <div
                   className="w-32 sm:w-36 h-40 sm:h-48 rounded-2xl overflow-hidden border-2 border-rlhp-orange shrink-0 bg-slate-900/60 p-1 shadow-lg group-hover:scale-105 transition-all relative cursor-pointer flex items-center justify-center"
                   onClick={() => setSelectedPhoto({
                     src: `${import.meta.env.BASE_URL}images/team/philomena_joy.jpg?v=20260928_v3`,
@@ -226,9 +226,9 @@ export default function AboutUs({ setCurrentPage }) {
                   })}
                   title="Click to zoom photo"
                 >
-                  <img 
-                    src={`${import.meta.env.BASE_URL}images/team/philomena_joy.jpg?v=20260928_v3`} 
-                    alt="Mrs. Philomena Joy - Founder, RLHP" 
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/team/philomena_joy.jpg?v=20260928_v3`}
+                    alt="Mrs. Philomena Joy - Founder, RLHP"
                     className="w-full h-full object-contain rounded-xl filter contrast-[1.04] brightness-[1.02]"
                   />
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-xl">
@@ -247,92 +247,100 @@ export default function AboutUs({ setCurrentPage }) {
           </div>
 
           {/* Executive Office Bearers */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-stretch">
             {/* President */}
-            <div className="bg-white p-6 rounded-2xl border-2 border-rlhp-green shadow-md text-center space-y-4 relative group flex flex-col items-center">
+            <div className="bg-white p-6 rounded-2xl border-2 border-rlhp-green shadow-md text-center relative group flex flex-col justify-between items-center h-full">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-rlhp-green text-white text-[10px] font-extrabold px-3 py-0.5 rounded-full shadow-xs uppercase tracking-wider">
                 President
               </span>
-              <div 
-                className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-rlhp-green mx-auto shadow-md group-hover:scale-105 transition-all mt-1 relative cursor-pointer bg-gray-100 p-1 flex items-center justify-center"
+              <div
+                className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-rlhp-green mx-auto shadow-md group-hover:scale-105 transition-all mt-1 relative cursor-pointer bg-white p-1 flex items-center justify-center shrink-0"
                 onClick={() => setSelectedPhoto({
-                  src: `${import.meta.env.BASE_URL}images/team/gita_mithra.jpg?v=20260928_v3`,
+                  src: `${import.meta.env.BASE_URL}images/team/gita_mithra.jpg?v=20261002_v6`,
                   name: "Mrs. Gita Mitra",
                   title: "President, RLHP Board"
                 })}
                 title="Click to zoom photo"
               >
-                <img 
-                  src={`${import.meta.env.BASE_URL}images/team/gita_mithra.jpg?v=20260928_v3`} 
-                  alt="Mrs. Gita Mitra - President, RLHP" 
+                <img
+                  src={`${import.meta.env.BASE_URL}images/team/gita_mithra.jpg?v=20261002_v6`}
+                  alt="Mrs. Gita Mitra - President, RLHP"
                   className="w-full h-full object-contain rounded-xl filter contrast-[1.04] brightness-[1.02]"
                 />
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-xl">
-                  <ZoomIn className="text-white" size={22} />
+                <div className="absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-2.5 rounded-xl">
+                  <span className="bg-white/95 text-rlhp-darkgreen text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1">
+                    <ZoomIn size={12} className="text-rlhp-green" /> View Photo
+                  </span>
                 </div>
               </div>
-              <div>
-                <h3 className="text-lg font-extrabold text-rlhp-darkgreen mt-1">Mrs. Gita Mitra</h3>
+              <div className="mt-4 flex flex-col justify-center flex-1">
+                <h3 className="text-lg font-extrabold text-rlhp-darkgreen">Mrs. Gita Mitra</h3>
                 <p className="text-xs text-rlhp-green font-bold mt-0.5">President, RLHP Board</p>
+                <p className="text-[11px] text-gray-600 mt-2 leading-snug">Guiding strategic governance, developmental policy, and institutional vision.</p>
               </div>
             </div>
 
             {/* Secretary */}
-            <div className="bg-white p-6 rounded-2xl border-2 border-rlhp-green shadow-md text-center space-y-4 relative group flex flex-col items-center">
+            <div className="bg-white p-6 rounded-2xl border-2 border-rlhp-green shadow-md text-center relative group flex flex-col justify-between items-center h-full">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-rlhp-green text-white text-[10px] font-extrabold px-3 py-0.5 rounded-full shadow-xs uppercase tracking-wider">
                 Secretary
               </span>
-              <div 
-                className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-rlhp-green mx-auto shadow-md group-hover:scale-105 transition-all mt-1 relative cursor-pointer bg-gray-100 p-1 flex items-center justify-center"
+              <div
+                className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-rlhp-green mx-auto shadow-md group-hover:scale-105 transition-all mt-1 relative cursor-pointer bg-white p-1 flex items-center justify-center shrink-0"
                 onClick={() => setSelectedPhoto({
-                  src: `${import.meta.env.BASE_URL}images/team/jose_vk.jpg?v=20260928_v3`,
+                  src: `${import.meta.env.BASE_URL}images/team/jose_vk.jpg?v=20261002_v6`,
                   name: "Mr. Jose V.K.",
                   title: "Secretary, RLHP"
                 })}
                 title="Click to zoom photo"
               >
-                <img 
-                  src={`${import.meta.env.BASE_URL}images/team/jose_vk.jpg?v=20260928_v3`} 
-                  alt="Mr. Jose V.K. - Secretary, RLHP" 
+                <img
+                  src={`${import.meta.env.BASE_URL}images/team/jose_vk.jpg?v=20261002_v6`}
+                  alt="Mr. Jose V.K. - Secretary, RLHP"
                   className="w-full h-full object-contain rounded-xl filter contrast-[1.04] brightness-[1.02]"
                 />
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-xl">
-                  <ZoomIn className="text-white" size={22} />
+                <div className="absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-2.5 rounded-xl">
+                  <span className="bg-white/95 text-rlhp-darkgreen text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1">
+                    <ZoomIn size={12} className="text-rlhp-green" /> View Photo
+                  </span>
                 </div>
               </div>
-              <div>
-                <h3 className="text-lg font-extrabold text-rlhp-darkgreen mt-1">Mr. Jose V.K.</h3>
-                <p className="text-xs text-rlhp-green font-bold mt-0.5">Secretary</p>
-                <p className="text-[11px] text-gray-600 mt-1 leading-snug">Leading RLHP's 42+ year legacy in child development, women sanghas & rural health.</p>
+              <div className="mt-4 flex flex-col justify-center flex-1">
+                <h3 className="text-lg font-extrabold text-rlhp-darkgreen">Mr. Jose V.K.</h3>
+                <p className="text-xs text-rlhp-green font-bold mt-0.5">Secretary, RLHP</p>
+                <p className="text-[11px] text-gray-600 mt-2 leading-snug">Leading executive administration, community sanghas, and child protection programmes.</p>
               </div>
             </div>
 
             {/* Treasurer */}
-            <div className="bg-white p-6 rounded-2xl border-2 border-rlhp-green shadow-md text-center space-y-4 relative group flex flex-col items-center">
+            <div className="bg-white p-6 rounded-2xl border-2 border-rlhp-green shadow-md text-center relative group flex flex-col justify-between items-center h-full">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-rlhp-green text-white text-[10px] font-extrabold px-3 py-0.5 rounded-full shadow-xs uppercase tracking-wider">
                 Treasurer
               </span>
-              <div 
-                className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-rlhp-green mx-auto shadow-md group-hover:scale-105 transition-all mt-1 relative cursor-pointer bg-gray-100 p-1 flex items-center justify-center"
+              <div
+                className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-rlhp-green mx-auto shadow-md group-hover:scale-105 transition-all mt-1 relative cursor-pointer bg-white p-1 flex items-center justify-center shrink-0"
                 onClick={() => setSelectedPhoto({
-                  src: `${import.meta.env.BASE_URL}images/team/santhosh_kumar.jpg?v=20260928_v3`,
+                  src: `${import.meta.env.BASE_URL}images/team/santhosh_kumar.jpg?v=20261002_v6`,
                   name: "Mr. Santhosh Kumar",
-                  title: "Treasurer, Financial Oversight"
+                  title: "Treasurer, RLHP Board"
                 })}
                 title="Click to zoom photo"
               >
-                <img 
-                  src={`${import.meta.env.BASE_URL}images/team/santhosh_kumar.jpg?v=20260928_v3`} 
-                  alt="Mr. Santhosh Kumar - Treasurer, RLHP" 
+                <img
+                  src={`${import.meta.env.BASE_URL}images/team/santhosh_kumar.jpg?v=20261002_v6`}
+                  alt="Mr. Santhosh Kumar - Treasurer, RLHP"
                   className="w-full h-full object-contain rounded-xl filter contrast-[1.04] brightness-[1.02]"
                 />
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-xl">
-                  <ZoomIn className="text-white" size={22} />
+                <div className="absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-2.5 rounded-xl">
+                  <span className="bg-white/95 text-rlhp-darkgreen text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1">
+                    <ZoomIn size={12} className="text-rlhp-green" /> View Photo
+                  </span>
                 </div>
               </div>
-              <div>
-                <h3 className="text-lg font-extrabold text-rlhp-darkgreen mt-1">Mr. Santhosh Kumar</h3>
-                <p className="text-xs text-rlhp-green font-bold mt-0.5">Treasurer, Financial Oversight</p>
+              <div className="mt-4 flex flex-col justify-center flex-1">
+                <h3 className="text-lg font-extrabold text-rlhp-darkgreen">Mr. Santhosh Kumar</h3>
+                <p className="text-xs text-rlhp-green font-bold mt-0.5">Treasurer, RLHP Board</p>
+                <p className="text-[11px] text-gray-600 mt-2 leading-snug">Managing financial governance, statutory compliance, and fiscal stewardship.</p>
               </div>
             </div>
           </div>
@@ -355,17 +363,17 @@ export default function AboutUs({ setCurrentPage }) {
                 .map((member, idx) => (
                   <div key={idx} className="bg-white p-6 rounded-2xl border border-gray-200 shadow-xs hover:shadow-md hover:border-rlhp-green transition-all duration-300 text-center space-y-4 group flex flex-col items-center">
                     {member.image ? (
-                      <div 
-                        className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-rlhp-green/40 group-hover:border-rlhp-green shrink-0 shadow-md bg-gray-100 p-1 group-hover:scale-105 transition-all duration-300 relative cursor-pointer flex items-center justify-center"
+                      <div
+                        className="w-36 sm:w-40 h-44 sm:h-52 rounded-2xl overflow-hidden border-2 border-rlhp-green/40 group-hover:border-rlhp-green shrink-0 shadow-md bg-white p-1 group-hover:scale-105 transition-all duration-300 relative cursor-pointer flex items-center justify-center"
                         onClick={() => setSelectedPhoto({
-                          src: member.image.startsWith('/') ? `${import.meta.env.BASE_URL}${member.image.slice(1)}?v=20260928_v3` : `${member.image}?v=20260928_v3`,
+                          src: member.image.startsWith('/') ? `${import.meta.env.BASE_URL}${member.image.slice(1)}?v=20261002_white_v1` : `${member.image}?v=20261002_white_v1`,
                           name: member.name,
                           title: `${member.designation}, RLHP Board`
                         })}
                         title="Click to view full photo in HD"
                       >
-                        <img 
-                          src={member.image.startsWith('/') ? `${import.meta.env.BASE_URL}${member.image.slice(1)}?v=20260928_v3` : `${member.image}?v=20260928_v3`} 
+                        <img
+                          src={member.image.startsWith('/') ? `${import.meta.env.BASE_URL}${member.image.slice(1)}?v=20261002_white_v1` : `${member.image}?v=20261002_white_v1`}
                           alt={`${member.name} - ${member.designation}`}
                           className="w-full h-full object-contain rounded-xl filter contrast-[1.04] brightness-[1.02]"
                         />
@@ -431,8 +439,8 @@ export default function AboutUs({ setCurrentPage }) {
               <div key={idx} className="bg-white p-4 rounded-xl border border-gray-200 shadow-2xs text-center flex flex-col items-center justify-between min-h-[130px] hover:border-rlhp-green hover:shadow-md transition-all group">
                 <div className="h-16 flex items-center justify-center w-full px-2">
                   {partner.logoImage ? (
-                    <img 
-                      src={`${import.meta.env.BASE_URL}${partner.logoImage.replace(/^\//, '')}`} 
+                    <img
+                      src={`${import.meta.env.BASE_URL}${partner.logoImage.replace(/^\//, '')}`}
                       alt={`${partner.name} Logo`}
                       className="h-12 w-auto max-w-full object-contain filter group-hover:scale-105 transition-all duration-300"
                     />
@@ -451,15 +459,15 @@ export default function AboutUs({ setCurrentPage }) {
 
       {/* High Resolution Photo Preview Modal */}
       {selectedPhoto && (
-        <div 
+        <div
           className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 transition-all duration-300 animate-fadeIn"
           onClick={() => setSelectedPhoto(null)}
         >
-          <div 
+          <div
             className="bg-white rounded-3xl overflow-hidden shadow-2xl max-w-md w-full p-6 text-center space-y-4 relative border border-gray-100"
             onClick={(e) => e.stopPropagation()}
           >
-            <button 
+            <button
               onClick={() => setSelectedPhoto(null)}
               className="absolute top-4 right-4 text-gray-400 hover:text-gray-900 bg-gray-100 hover:bg-gray-200 p-2 rounded-full transition-colors"
               title="Close modal"
@@ -467,11 +475,11 @@ export default function AboutUs({ setCurrentPage }) {
               <X size={20} />
             </button>
 
-            <div className="w-64 sm:w-72 h-80 sm:h-96 mx-auto rounded-2xl overflow-hidden border-4 border-rlhp-green shadow-xl bg-gray-50 mt-2">
-              <img 
-                src={selectedPhoto.src} 
+            <div className="w-64 sm:w-72 h-80 sm:h-96 mx-auto rounded-2xl overflow-hidden border-4 border-rlhp-green shadow-xl bg-white p-2 mt-2 flex items-center justify-center">
+              <img
+                src={selectedPhoto.src}
                 alt={selectedPhoto.name}
-                className="w-full h-full object-cover object-[center_15%] filter contrast-[1.04] brightness-[1.02]"
+                className="w-full h-full object-contain rounded-xl filter contrast-[1.04] brightness-[1.02]"
               />
             </div>
 

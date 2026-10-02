@@ -171,11 +171,11 @@ export default function ImageModal({ item, onClose }) {
               )}
             </div>
           ) : item.image ? (
-            <div className="bg-slate-950 flex items-center justify-center p-3 max-h-[45vh] overflow-hidden shrink-0">
+            <div className="bg-slate-950 flex items-center justify-center p-3 sm:p-4 max-h-[60vh] overflow-hidden shrink-0">
               <img 
                 src={getImageUrl(item.image)} 
                 alt={item.title} 
-                className="max-h-[42vh] w-auto max-w-full object-contain mx-auto rounded shadow-md" 
+                className="max-h-[56vh] w-auto max-w-full object-contain mx-auto rounded shadow-md" 
               />
             </div>
           ) : null}

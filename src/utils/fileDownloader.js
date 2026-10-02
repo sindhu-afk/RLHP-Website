@@ -69,7 +69,7 @@ export async function downloadPDFDocument(item) {
     <div style="margin-top: 30px; padding-top: 16px; border-top: 1px solid #e5e7eb; font-size: 10.5px; color: #6b7280; text-align: center; line-height: 1.5;">
       <p style="margin: 0; font-weight: 700; color: #1b4332;">Rural Literacy & Health Programme (RLHP)</p>
       <p style="margin: 2px 0;">No. 343, 2nd Stage, Gayathripuram, Udayagiri Post, Mysuru, Karnataka, India – 570019.</p>
-      <p style="margin: 2px 0;">Phones: 0821 2454696, 0821 2451216 | Email: mysore@rlhp.org | Website: www.rlhpmysore.com</p>
+      <p style="margin: 2px 0;">Phones: 0821 2454696, 0821 2451216 | Email: mysore@rlhp.org</p>
     </div>
   `;
 

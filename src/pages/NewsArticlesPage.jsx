@@ -70,9 +70,13 @@ export default function NewsArticlesPage({ onSelectNews, setCurrentPage, onNavCl
               className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-2xs hover:shadow-md transition-all cursor-pointer group flex flex-col justify-between"
             >
               <div>
-                <div className="relative h-48 overflow-hidden">
-                  <img src={getImageUrl(item.image)} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-                  <span className="absolute top-3 left-3 bg-rlhp-green text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">
+                <div className="relative h-64 sm:h-72 bg-slate-50 border-b border-gray-100 p-2.5 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src={getImageUrl(item.image)} 
+                    alt={item.title} 
+                    className="w-full h-full object-contain group-hover:scale-102 transition-transform duration-300 drop-shadow-xs" 
+                  />
+                  <span className="absolute top-2.5 left-2.5 bg-rlhp-green/90 backdrop-blur-xs text-white text-[10px] font-bold px-2.5 py-0.5 rounded uppercase shadow-xs">
                     {item.category}
                   </span>
                 </div>
